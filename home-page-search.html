@@ -346,8 +346,8 @@ Rate our App
             Discover, Book & Experience the Best Adventures Worldwide
         </p>
         <div class="relative w-full max-w-[850px] ">
-            <input type="search" name="search" id="search"
-                class="p-[18px] sm:p-[22px] w-full pl-[58px] rounded-2xl opacity-80 bg-[linear-gradient(84deg,_#FCFCFD_36.52%,_rgba(252,252,253,0.83)_98.8%)] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05)] backdrop-blur-[6px] text-lg leading-5 tracking-[0.18px] text-gray-900"
+            <input type="search" name="search" id="searchInput"
+                class="p-[18px] sm:p-[22px] w-full lg:pl-[58px] pl-[58px] rounded-2xl opacity-80 bg-[linear-gradient(84deg,_#FCFCFD_36.52%,_rgba(252,252,253,0.83)_98.8%)] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05)] backdrop-blur-[6px] text-lg leading-5 tracking-[0.18px] text-gray-900"
                 placeholder="Search by destinations & experiences">
             <svg class="absolute top-4 left-4" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
                 viewBox="0 0 28 28" fill="none">
@@ -357,6 +357,83 @@ Rate our App
                 <path d="M25.6654 25.6615L23.332 23.3281" stroke="#111827" stroke-width="2.1" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
+           <div class="results z-30 absolute bottom-0 mt-3.5 top-full w-[600px] bg-white p-6 rounded-xl h-[470px] hidden">
+            <h4 class="text-base font-sf_pro_display_medium text-[#667085] mb-4">Suggestions</h4>
+            <ul class="flex flex-col gap-5" >
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"/>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"/>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+                    </div>  
+                </a>
+             </li>
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"/>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"/>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+                    </div>  
+                </a>
+             </li>
+             <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"/>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"/>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+                    </div>  
+                </a>
+             </li>
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"/>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"/>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+                    </div>  
+                </a>
+             </li>
+              <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"/>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"/>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+                    </div>  
+                </a>
+             </li>
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"/>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"/>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+                    </div>  
+                </a>
+             </li>
+		 </ul>
+         </div>
         </div>
     </div>
 </div>
@@ -4854,6 +4931,7 @@ Rate our App
       </div>
     </footer>
   </div>
+  <!--login modal-->
   <div class="modalTrigger modal-home bg-white  max-h-max rounded-2xl p-4" id="login-modal">
     <span
       class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  absolute top-4 right-4 w-9 h-9 flex items-center justify-center">
@@ -4926,6 +5004,102 @@ Rate our App
         <p class="text-sm font-normal text-white text-center">Don't have an account? <span
             class="text-[#F99D1A] cursor-pointer font-medium  " data-modal-target="Sign_up">Register</span></p>
       </form>
+    </div>
+  </div>
+  <!--login modal mobile-->
+  <div class="modalTrigger modal-home bg-white  max-h-max rounded-2xl p-4" id="search-modal">
+    <span
+      class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  absolute top-4 right-4 w-9 h-9 flex items-center justify-center">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_3692_10400)">
+          <path
+            d="M2.10901 1.01287L5.997 4.90088L9.869 1.02887C9.93686 0.956649 10.0186 0.898871 10.1093 0.859005C10.2001 0.819139 10.2979 0.798006 10.397 0.796875C10.6092 0.796875 10.8127 0.88116 10.9627 1.03119C11.1127 1.18122 11.197 1.3847 11.197 1.59688C11.1989 1.69496 11.1807 1.79238 11.1435 1.88318C11.1064 1.97398 11.0511 2.05622 10.981 2.12488L7.069 5.99688L10.981 9.90888C11.1129 10.0379 11.1902 10.2125 11.197 10.3969C11.197 10.609 11.1127 10.8125 10.9627 10.9626C10.8127 11.1126 10.6092 11.1969 10.397 11.1969C10.295 11.2011 10.1933 11.1841 10.0983 11.1469C10.0033 11.1097 9.91701 11.0532 9.845 10.9809L5.997 7.09288L2.11701 10.9729C2.04941 11.0427 1.96866 11.0984 1.87941 11.1369C1.79016 11.1753 1.69418 11.1957 1.59701 11.1969C1.38483 11.1969 1.18135 11.1126 1.03132 10.9626C0.881291 10.8125 0.797005 10.609 0.797005 10.3969C0.79514 10.2988 0.813338 10.2014 0.850481 10.1106C0.887625 10.0198 0.942931 9.93753 1.01301 9.86888L4.925 5.99688L1.01301 2.08487C0.881153 1.95588 0.803837 1.7812 0.797005 1.59688C0.797005 1.3847 0.881291 1.18122 1.03132 1.03119C1.18135 0.88116 1.38483 0.796875 1.59701 0.796875C1.78901 0.799275 1.97301 0.876875 2.10901 1.01287Z"
+            fill="black" />
+        </g>
+        <defs>
+          <clipPath id="clip0_3692_10400">
+            <rect width="12" height="12" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </span>
+    <div class="w-full flex flex-col">
+        <h4 class="text-base font-sf_pro_display_medium text-[#667085] mb-4">Suggestions</h4>
+        <ul class="flex flex-col gap-5">
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+                    </div>  
+                </a>
+             </li>
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+                    </div>  
+                </a>
+             </li>
+             <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+                    </div>  
+                </a>
+             </li>
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+                    </div>  
+                </a>
+             </li>
+              <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+                    </div>  
+                </a>
+             </li>
+			 <li>
+                <a href="#" class="flex items-center gap-2.5">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
+                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+                    </svg>
+                    <div class="block">
+                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
+                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+                    </div>  
+                </a>
+             </li>
+		 </ul>
+
     </div>
   </div>
   <div class="overlay-modal w-full h-screen z-[500] fixed top-0 left-0 opacity-0 invisible"></div>

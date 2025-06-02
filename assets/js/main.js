@@ -9,35 +9,47 @@ $(document).ready(function () {
 
   
 /* ============= Tabs =========*/
-document.querySelectorAll(".tabs-container").forEach(function (tabsContainer) {
-	// Get all tab togglers inside the current tab container
-	let tabTogglers = tabsContainer.querySelectorAll(".tab-toggler");
-	let tabContents = tabsContainer.querySelector(".tab-contents");
-	tabTogglers.forEach(function (toggler) {
-		toggler.addEventListener("click", function (e) {
-			e.preventDefault();
-			// Get the tab name (the href attribute in the link)
-			let tabName = this.getAttribute("href");
-			// Loop through all the tab content elements
-			for (let i = 0; i < tabContents.children.length; i++) {
-				// Remove the active classes from both the tab togglers and the content
-				tabTogglers[i].parentElement.classList.remove(
-					"active",
-					
-				);
-				tabContents.children[i].classList.add("hidden");
-				// If this tab is the one to be shown, show it and add active classes to the toggler
-				if ("#" + tabContents.children[i].id === tabName) {
-					tabContents.children[i].classList.remove("hidden");
-					tabTogglers[i].parentElement.classList.add(
-						"active",
-						
-					);
-				}
-			}
-		});
-	});
+document.addEventListener("DOMContentLoaded", function () {
+  const tabLinks = document.querySelectorAll(".tablink");
+  const tabContents = document.querySelectorAll(".tabcontent");
+  tabLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      const tabId = this.getAttribute("data-tab");
+      // Remove active class from all links and reset indicators
+      tabLinks.forEach((l) => {
+        l.classList.remove("active", "text-orange");
+        l.classList.add("text-gray-500");
+        const span = l.querySelector(".tab-indicator");
+        if (span) {
+          span.style.width = "0";
+        }
+      });
+      // Hide all tab contents
+      tabContents.forEach((content) => {
+        content.classList.add("hidden");
+      });
+      // Activate current tab link
+      this.classList.add("active", "text-orange");
+      this.classList.remove("text-gray-500");
+      // Show the current tab content
+      const activeTab = document.getElementById(tabId);
+      if (activeTab) {
+        activeTab.classList.remove("hidden");
+      }
+      // Animate tab indicator
+      const indicator = this.querySelector(".tab-indicator");
+      if (indicator) {
+        indicator.style.width = "40px"; // same as initial tab
+      }
+    });
+  });
+  // Trigger click on the initially active tab
+  const initialTab = document.querySelector(".tablink.active");
+  if (initialTab) {
+    initialTab.click();
+  }
 });
+
 
 /* ============= Custom Select Picker=========*/
 $(document).ready(function () {
@@ -485,3 +497,117 @@ $(document).ready(function () {
         overlay.style.visibility = "hidden";
       });
     });
+
+ /*========date picker==============*/
+ $(document).ready(function () {
+  let fpInstances = {};
+
+  function formatDate(fp, date) {
+    return fp.formatDate(date, "F d, Y");
+  }
+
+  $(".form-date").each(function (index) {
+    $(this).attr("data-index", index); // tag each input
+  });
+
+  $(".form-date").on("click", function (e) {
+    e.stopPropagation();
+    const $input = $(this);
+    const index = $input.data("index");
+    const $wrapper = $input.siblings(".custom-flatpickr-wrapper");
+
+    const offset = $input.offset();
+    $wrapper.css({
+      display: "block",
+      top: offset.top + $input.outerHeight(),
+      left: offset.left,
+      zIndex: 9999
+    });
+
+    const pickerEl = $wrapper.find(".inline-flatpickr")[0];
+
+    // Use index as a unique key
+    if (!fpInstances[index]) {
+      const fp = flatpickr(pickerEl, {
+        inline: true,
+        mode: "range",
+        showMonths: 2,
+        dateFormat: "F d, Y",
+        onChange: function (selectedDates) {
+          if (selectedDates.length === 2) {
+            const rangeStr = `${formatDate(fp, selectedDates[0])} to ${formatDate(fp, selectedDates[1])}`;
+            $input.val(rangeStr);
+            $wrapper.hide();
+          }
+        }
+      });
+      fpInstances[index] = fp;
+    }
+
+    // Hide on outside click
+    $(document).off("mousedown.customPicker").on("mousedown.customPicker", function (e) {
+      if (!$(e.target).closest(".custom-flatpickr-wrapper, .form-date").length) {
+        $(".custom-flatpickr-wrapper").hide();
+        $(document).off("mousedown.customPicker");
+      }
+    });
+  });
+});
+
+/*=========hero modal image gallery ============*/
+var swiper = new Swiper(".Provider-thumb", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 8,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".Provider-big-slider", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+
+     var swiper = new Swiper(".Traveler-thumb", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 8,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".Traveler-big-slider", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+
+   /*========search ==========*/
+   $(document).ready(function() {
+    $('#searchInput').on('input', function() {
+        const inputValue = $(this).val().trim();
+        if (inputValue.length > 0) {
+            $('.results').removeClass('hidden');
+        } else {
+            $('.results').addClass('hidden');
+        }
+    });
+
+    // Optional: Hide results when clicking outside
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#searchInput, .results').length) {
+            $('.results').addClass('hidden');
+        }
+    });
+}); 
