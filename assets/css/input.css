@@ -19,7 +19,15 @@
     font-weight: 600;
    
 }
-
+@layer utilities {
+     .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Opera */
+  }
+}
 
 @layer base {
     html {
@@ -354,8 +362,8 @@
     input[type="radio"]:checked + label span {
         @apply border-[5px] border-orange;
     }
-    .radio-coupon input[type="radio"]:checked + label span {
-        @apply border border-[#026aa2] bg-[#026aa2] shadow-[inset_0_0px_0px_2.5px_#E7E7FF];
+    .radio-coupon input[type="radio"]:checked+label span {
+        @apply border border-[#026AA2] bg-[#026AA2] shadow-[inset_0_0px_0px_2.5px_#E7E7FF];
     }
     input[type="radio"]:checked:disabled + label span {
         @apply cursor-not-allowed border ;
@@ -692,7 +700,7 @@ background: rgba(255, 82, 49, 0.10);
     border: 1px solid #E2EAF0;
     border-radius: 16px;
 }
-.flatpickr-calendar{
+.custom-calendar-wrapper .flatpickr-calendar{
   background:transparent;
   border:none;
       box-shadow: none!important;
@@ -734,7 +742,7 @@ span.flatpickr-weekday {
 .flatpickr-current-month span.cur-month,.flatpickr-current-month input.cur-year{
   font-weight:600;
 }
-.dayContainer + .dayContainer {
+.custom-calendar-wrapper .dayContainer + .dayContainer {
    box-shadow: none!important;
     padding-left: 10px;
 }
@@ -771,7 +779,76 @@ span.flatpickr-weekday {
      box-shadow:none!important;
 }
 
+ .Provider-thumb .swiper-wrapper .swiper-slide img,
+    .Traveler-thumb .swiper-wrapper .swiper-slide img {
+        opacity: 0.7;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        transition: all 0.6s ease;
+    }
 
+    .Provider-thumb .swiper-wrapper .swiper-slide.swiper-slide-visible.swiper-slide-thumb-active img,
+    .Traveler-thumb .swiper-wrapper .swiper-slide.swiper-slide-visible.swiper-slide-thumb-active img {
+        opacity: 1;
+        border: 3px solid #FF5231;
+    }
+
+    .Provider-big-slider .swiper-wrapper,
+    .Traveler-big-slider .swiper-wrapper {
+        width: 100%;
+        height: max-content;
+
+    }
+
+    .Provider-big-slider .swiper-slide,
+    .Traveler-big-slider .swiper-slide {
+        padding: 80px 0px
+    }
+
+    .Provider-big-slider .swiper-slide img,
+    .Traveler-big-slider .swiper-slide img {
+        width: 100%;
+        max-width: 612px;
+        margin: 0 auto;
+        border-radius: 22px;
+    }
+
+    .Traveler-big-slider .swiper-slide img {
+        width: 100%;
+        max-width: 612px;
+        margin: 0 0;
+        border-radius: 22px;
+    }
+
+    .Provider-big-slider .swiper-button-prev,
+    .Provider-big-slider .swiper-button-next,
+    .Traveler-big-slider .swiper-button-prev,
+    .Traveler-big-slider .swiper-button-next {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.3px solid #D0D5DD;
+        border-radius: 12px;
+    }
+
+    .Provider-big-slider .swiper-button-prev:after,
+    .Provider-big-slider .swiper-button-next:after,
+    .Traveler-big-slider .swiper-button-prev:after,
+    .Traveler-big-slider .swiper-button-next:after {
+        content: "";
+    }
+    @media(max-width:1024px) {
+         .custom-flatpickr-wrapper{
+            margin-left: -80%;
+         }   
+    }
+    @media(max-width:990px){
+         .custom-flatpickr-wrapper{
+            margin-left: 0%;
+         }  
+    }
     @media(max-width:767px){
         .mob-review .swiper-slide{
             width: 100%;

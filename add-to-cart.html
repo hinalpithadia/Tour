@@ -16,7 +16,7 @@
 <body class=" font-sf_pro_display font-normal">
   <div class="bg-lightgray ">
     <!-- navbar start  -->
-    <nav
+     <nav
       class="fixed z-30 w-full  border-b border-[#D0D5DD]  flex justify-between py-2.5 bg-white/50 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05);] backdrop-blur-[6px]  items-center transition-all duration-200">
       <div class=" w-full mx-auto  px-3 container">
         <div class="flex md:justify-start justify-between items-center">
@@ -26,63 +26,9 @@
             <img src="assets/images/logo.png" alt="logo">
           </a>
 
-          <ul id="toggle-menu"
-            class="main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 -translate-y-[200%] lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c]  lg:rounded-none rounded-2xl hidden">
-            <div
-              class="flex lg:hidden items-center justify-between p-5 border-b border-[#DCD7D7] dark:border-[#263c6b]">
-              <span class="text-sm font-medium text-[#020B1E] dark:text-white">Light Mode</span>
-              <!-- Dark Mode Toggle -->
-              <label for="dark-mode-toggle-mobile"
-                class=" cursor-pointer flex items-center  light-mode rounded-lg p-[3px] ">
-                <!-- Light Mode Icon (on left) -->
-                <div class="w-11 h-11 flex justify-center items-center light-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
-                      stroke="white" stroke-width="1.5" />
-                    <path d="M12 3V5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M12 19V21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M18.3673 5.63623L16.9531 7.05044" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M7.05093 16.9497L5.63672 18.3639" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M18.3673 18.3644L16.9531 16.9502" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M7.05093 7.04996L5.63672 5.63574" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M21 12H19" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M5 12H3" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </div>
-
-                <!-- Dark Mode Toggle Switch -->
-                <input id="dark-mode-toggle-mobile" type="checkbox" class="hidden dark-mode-toggle">
-
-                <!-- Dark Mode Icon (on right) -->
-                <div class="w-11 h-11 flex justify-center items-center dark-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M3 11.6014C3 16.7922 7.09519 21.0001 12.1469 21.0001C15.273 21.0001 18.0328 19.3887 19.6826 16.9301C20.3756 15.8974 20.7221 15.381 20.41 14.8411C20.0979 14.3012 19.3273 14.3541 17.7861 14.4599C10.8576 14.9353 8.58646 10.8359 8.23195 6.90293C8.066 5.0618 7.98302 4.14123 7.355 3.93743C6.72697 3.73363 6.26281 4.26556 5.3345 5.32941C3.8829 6.99296 3 9.19125 3 11.6014Z"
-                      stroke="#020B1E" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </div>
-              </label>
-            </div>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP Calculator</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP Vs Lump Sum</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP vs SWP</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">Blog</a>
-            </li>
-          </ul>
+        
           <div class="flex items-center gap-20">
-            <div class="block relative md:w-[400px]">
+            <div class="hidden md:block relative md:w-[400px]">
               <input type="text" class="md:block hidden py-2.5 pl-3.5 pr-10 border border-[#D0D5DD] shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05)] text-base text-primary-gray bg-transparent rounded-[30px] w-full" placeholder="What are you looking for?" />
               <button class="md:absolute top-1.5 right-3 p-2 bg-transparent text-primary-black md:text-white md:bg-orange flex justify-center items-center rounded-full">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,8 +37,10 @@
 
               </button>
             </div>
+            
           </div>
           <div class="md:ml-auto flex items-center md:gap-6 gap-2">
+           
             <button class="hidden xl:flex py-2.5 px-3.5 border border-[#D0D5DD] rounded-md transition-all duration-500  items-center gap-1.5 text-sm text-orange font-sf_pro_display_medium hover:bg-[#ffefec]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.9609 6.17188C18.9609 7.56187 20.3409 9.77187 20.6209 12.3219" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -105,6 +53,12 @@
               Join Our Supplier Network
             </button>
             <div class="flex items-center md:gap-6 gap-3">
+               <button class="md:hidden block">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#292D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 22L20 20" stroke="#292D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </button>
               <button class="flex flex-col items-center gap-1">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.62 20.8116C12.28 20.9316 11.72 20.9316 11.38 20.8116C8.48 19.8216 2 15.6916 2 8.69156C2 5.60156 4.49 3.10156 7.56 3.10156C9.38 3.10156 10.99 3.98156 12 5.34156C13.01 3.98156 14.63 3.10156 16.44 3.10156C19.51 3.10156 22 5.60156 22 8.69156C22 15.6916 15.52 19.8216 12.62 20.8116Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -121,7 +75,7 @@
 
                 <span class="md:block hidden text-sm text-[#344054]">Cart</span>
               </button>
-              <button class="hidden md:flex flex-col items-center gap-1" data-modal-target="login-modal">
+              <button class="flex flex-col items-center gap-1" data-modal-target="login-modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.1187 12.7766C12.0487 12.7666 11.9587 12.7666 11.8787 12.7766C10.1187 12.7166 8.71875 11.2766 8.71875 9.50656C8.71875 7.69656 10.1787 6.22656 11.9987 6.22656C13.8087 6.22656 15.2787 7.69656 15.2787 9.50656C15.2687 11.2766 13.8787 12.7166 12.1187 12.7766Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M18.7417 19.3825C16.9617 21.0125 14.6017 22.0025 12.0017 22.0025C9.40172 22.0025 7.04172 21.0125 5.26172 19.3825C5.36172 18.4425 5.96172 17.5225 7.03172 16.8025C9.77172 14.9825 14.2517 14.9825 16.9717 16.8025C18.0417 17.5225 18.6417 18.4425 18.7417 19.3825Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -132,25 +86,67 @@
               </button>
             </div>
           </div>
-          <button id="toggle-button" class=" relative z-10  w-8 h-8 block lg:hidden">
-            <div class="flex flex-col gap-[5px]">
-              <span class="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-              <span class="w-[10px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-              <span class="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-            </div>
-          </button>
+         
         </div>
       </div>
     </nav>
     <!-- navbar end  -->
       <!-- main start  -->
       <!-- header section start -->
-      <div class="relative pt-[120px] pb-[40px] lg:pb-[80px]">
+      <div class="relative pt-[80px] md:pt-[120px] pb-[40px] lg:pb-[80px]">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
           <div class="flex flex-col md:gap-8 gap-3.5">
-           <div class="md:block hidden">breadcrumb</div>
-           <h4 class="md:hidden block text-center text-lg text-primary-black font-sf_pro_display_medium">Booking Details</h4>
-            <div class="bg-[#34C75926] py-3 px-3.5 flex items-center gap-2.5 rounded-2xl text-xl text-[#1AAF3F] font-sf_pro_display_medium">
+          <ol class="hidden sm:inline-flex items-center space-x-1 md:space-x-3 py-1.5 mb-3.5">
+            <li class="inline-flex items-center">
+              <div class=" relative inline-flex">
+                <button type="button" class="inline-flex justify-center items-center gap-2 text-base font-medium text-gray-900 hover:text-[#FF5231] bg-transparenta whitespace-nowrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10 11.2722L6 11.2722M2 7.27636V11.2722C2 12.5581 2 13.201 2.39052 13.6005C2.78105 14 3.40959 14 4.66667 14H11.3333C12.5904 14 13.219 14 13.6095 13.6005C14 13.201 14 12.5581 14 11.2722V8.73626C14 7.30696 14 6.59231 13.6845 5.9892C13.3689 5.3861 12.7876 4.98968 11.6251 4.19685L9.4792 2.73345C8.7622 2.24448 8.4037 2 8 2C7.5963 2 7.2378 2.24448 6.5208 2.73345L3.18747 5.00665C2.60618 5.40307 2.31553 5.60128 2.15777 5.90283C2 6.20439 2 6.56171 2 7.27636Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+                  </svg>
+                  Home
+                </button>
+
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.50295 5L12.5032 10.0002L7.5 15.0034" stroke="#667085" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <a href="javascript:;" class="ml-1 text-base font-sf_pro_display_medium font-medium text-[#667085] hover:text-[#FF5231] md:ml-2 whitespace-nowrap">
+                  Barcelona
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.50295 5L12.5032 10.0002L7.5 15.0034" stroke="#667085" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <a href="javascript:;" class="ml-1 text-base font-sf_pro_display_medium font-medium text-[#667085] hover:text-[#FF5231] md:ml-2 whitespace-nowrap">
+                  Barcelona: Park Güell Guided...
+                </a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.50295 5L12.5032 10.0002L7.5 15.0034" stroke="#667085" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="ml-1 text-base font-sf_pro_display_medium font-medium text-[#667085] md:ml-2 whitespace-nowrap">Availability
+                </span>
+              </div>
+            </li>
+          </ol>
+           <div class="flex items-center gap-2.5 sm:hidden mb-4">
+            <a href="#" class="rounded-lg border border-[#E6E8EC] text-[#777E91] transition-all duration-500 hover:border-orange hover:text-orange">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2071 16.2071C14.5976 15.8166 14.5976 15.1834 14.2071 14.7929L11.4142 12L14.2071 9.20711C14.5976 8.81658 14.5976 8.18342 14.2071 7.79289C13.8166 7.40237 13.1834 7.40237 12.7929 7.79289L9.29289 11.2929C8.90237 11.6834 8.90237 12.3166 9.29289 12.7071L12.7929 16.2071C13.1834 16.5976 13.8166 16.5976 14.2071 16.2071Z" fill="currentColor"></path>
+              </svg>
+            </a>
+            <h2 class="text-lg font-medium leading-6 text-gray-900 text-center w-[calc(100%-34px)]">Booking Details</h2>
+          </div>
+            <div class="bg-[#34C75926] py-3 px-3.5 flex items-center gap-2.5 rounded-2xl text-base sm:text-xl text-[#1AAF3F] font-sf_pro_display_medium">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#1AAF3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M7.75 12L10.58 14.83L16.25 9.16998" stroke="#1AAF3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -163,7 +159,7 @@
                         <img src="assets/images/cart-small-img.png" alt="image"/>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <h4 class="text-secondary-black text-base md:text-lg font-sf_pro_display_medium">Barcelona: Park Güell Guided Tour & Priority Access</h4>
+                        <h4 class="text-secondary-black text-sm md:text-lg font-sf_pro_display_medium">Barcelona: Park Güell Guided Tour & Priority Access</h4>
                         <div class="flex flex-col gap-1.5">
                             <div class="flex items-center gap-2">
                                 <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,7 +174,7 @@
 <path d="M6.91209 11.9167H6.91957" stroke="#292D32" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M6.91209 14.4167H6.91957" stroke="#292D32" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-<span class="text-base text-primary-gray font-sf_pro_display_medium">Monday, March 10,2025</span>
+<span class="text-sm md:text-base text-primary-gray font-sf_pro_display_medium">Monday, March 10,2025</span>
                             </div>
                             <div class="flex items-center gap-2">
        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -188,13 +184,13 @@
 <path d="M12.418 15.9167V14.95C12.418 13.7583 13.268 13.2667 14.3013 13.8667L15.1346 14.35L15.968 14.8333C17.0013 15.4333 17.0013 16.4083 15.968 17.0083L15.1346 17.4917L14.3013 17.975C13.268 18.575 12.418 18.0833 12.418 16.8917V15.9167Z" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
-<span class="text-base text-primary-gray font-sf_pro_display_medium">4:05 PM</span>
+<span class="text-sm md:text-base text-primary-gray font-sf_pro_display_medium">4:05 PM</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col gap-3.5 md:w-fit w-full">
-                    <span class="bg-[#F0F9FF] rounded-lg p-3 md:w-[350px] w-full flex items-center gap-2 text-base font-sf_pro_display_medium text-[#026AA2]">
+                    <span class="bg-[#F0F9FF] rounded-lg p-3 md:w-[350px] w-full flex items-center gap-2 text-sm sm:text-base font-sf_pro_display_medium text-[#026AA2]">
                         <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9.5 17C13.625 17 17 13.625 17 9.5C17 5.375 13.625 2 9.5 2C5.375 2 2 5.375 2 9.5C2 13.625 5.375 17 9.5 17Z" stroke="#026AA2" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M9.5 6.5V10.25" stroke="#026AA2" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
@@ -221,7 +217,7 @@ We’ll reserve your spot for 30 minutes.
     <!-- more exp  -->
     <div class="pb-[40px] lg:pb-[80px] w-full">
       <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
-        <h2 class="font-sf_pro_display_medium font-medium text-2xl leading-[23px] text-secondary-black mb-6">More
+        <h2 class="font-sf_pro_display_medium font-medium text-lg sm:text-2xl leading-[23px] text-secondary-black mb-6">More
           Experiences You Might Enjoy</h2>
         <!-- desktop grid view  -->
         <div class="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-x-3.5 gap-y-3">
@@ -263,7 +259,7 @@ We’ll reserve your spot for 30 minutes.
               </div>
               <ul class="md:block hidden border-b border-[#E6E8EC] pb-3 mb-3">
                 <h5 class="text-secondary-black text-lg font-semibold mb-2.5">Package includes:</h5>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -281,7 +277,7 @@ We’ll reserve your spot for 30 minutes.
                     </svg>
                     Sagrada Familia
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -299,7 +295,7 @@ We’ll reserve your spot for 30 minutes.
                     </svg>
                     Park Güell: Entry + Audio Guide
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -419,7 +415,7 @@ Add to Cart</button>
               </div>
                <ul class="md:block hidden border-b border-[#E6E8EC] pb-3 mb-3">
                 <h5 class="text-secondary-black text-lg font-semibold mb-2.5">Package includes:</h5>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -437,7 +433,7 @@ Add to Cart</button>
                     </svg>
                     Sagrada Familia
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -455,7 +451,7 @@ Add to Cart</button>
                     </svg>
                     Park Güell: Entry + Audio Guide
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -574,7 +570,7 @@ Add to Cart</button>
               </div>
               <ul class="md:block hidden border-b border-[#E6E8EC] pb-3 mb-3">
                 <h5 class="text-secondary-black text-lg font-semibold mb-2.5">Package includes:</h5>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -592,7 +588,7 @@ Add to Cart</button>
                     </svg>
                     Sagrada Familia
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -610,7 +606,7 @@ Add to Cart</button>
                     </svg>
                     Park Güell: Entry + Audio Guide
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -729,7 +725,7 @@ Add to Cart</button>
               </div>
                <ul class="md:block hidden border-b border-[#E6E8EC] pb-3 mb-3">
                 <h5 class="text-secondary-black text-lg font-semibold mb-2.5">Package includes:</h5>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -747,7 +743,7 @@ Add to Cart</button>
                     </svg>
                     Sagrada Familia
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">
@@ -765,7 +761,7 @@ Add to Cart</button>
                     </svg>
                     Park Güell: Entry + Audio Guide
                 </li>
-                <li class="flex items-center gap-4 text-base text-secondary-black mb-2">
+                <li class="flex items-center gap-4 text-sm xl:text-base text-secondary-black mb-2">
                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1465_57617)">
                     <g clip-path="url(#clip1_1465_57617)">

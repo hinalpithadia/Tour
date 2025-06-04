@@ -6,8 +6,11 @@ $(document).ready(function () {
 	});
 });
 
-
-  
+/*=============date picker mobile===============*/
+  flatpickr(".datemobile", {
+  dateFormat: "Y-m-d",
+  disableMobile: true, // forces custom UI on mobile instead of native picker
+});
 /* ============= Tabs =========*/
 document.addEventListener("DOMContentLoaded", function () {
   const tabLinks = document.querySelectorAll(".tablink");
@@ -331,11 +334,6 @@ function decreaseValue(button) {
   if(value < 1) return;
   numberInput.innerHTML = value-1;
 }
-/*=============date picker===============*/
-//  $(".basicDate").flatpickr({
-//       enableTime: true,
-//       dateFormat: "F d, Y"
-// });
 
 /*=========hero mobile slider===========*/
  var swiper = new Swiper(".hero-mobile-slider", {
@@ -436,6 +434,24 @@ function decreaseValue(button) {
   var swiper = new Swiper(".tour-hero-feature", {
       slidesPerView: "auto",
       spaceBetween: 26,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+     /*==============cart tour expert mobile slider================*/  
+       var swiper = new Swiper(".tour-expert-mobile", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+     /*==============tour hero mobile slider================*/  
+      var swiper = new Swiper(".tour-hero-mobile", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -553,6 +569,7 @@ $(document).ready(function () {
     });
   });
 });
+
 
 /*=========hero modal image gallery ============*/
 var swiper = new Swiper(".Provider-thumb", {

@@ -16,171 +16,93 @@
 <body class=" font-sf_pro_display font-normal">
   <div class="bg-lightgray ">
     <!-- navbar start  -->
-    <nav
+   <nav
       class="fixed z-30 w-full  border-b border-[#D0D5DD]  flex justify-between py-2.5 bg-white/50 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05);] backdrop-blur-[6px]  items-center transition-all duration-200">
       <div class=" w-full mx-auto  px-3 container">
         <div class="flex md:justify-start justify-between items-center">
-
+          
           <a href="index.html"
             class="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap ">
             <img src="assets/images/logo.png" alt="logo">
           </a>
 
-          <ul id="toggle-menu"
-            class="main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 -translate-y-[200%] lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c]  lg:rounded-none rounded-2xl hidden">
-            <div
-              class="flex lg:hidden items-center justify-between p-5 border-b border-[#DCD7D7] dark:border-[#263c6b]">
-              <span class="text-sm font-medium text-[#020B1E] dark:text-white">Light Mode</span>
-              <!-- Dark Mode Toggle -->
-              <label for="dark-mode-toggle-mobile"
-                class=" cursor-pointer flex items-center  light-mode rounded-lg p-[3px] ">
-                <!-- Light Mode Icon (on left) -->
-                <div class="w-11 h-11 flex justify-center items-center light-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
-                      stroke="white" stroke-width="1.5" />
-                    <path d="M12 3V5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M12 19V21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M18.3673 5.63623L16.9531 7.05044" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M7.05093 16.9497L5.63672 18.3639" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M18.3673 18.3644L16.9531 16.9502" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M7.05093 7.04996L5.63672 5.63574" stroke="white" stroke-width="1.5"
-                      stroke-linecap="round" />
-                    <path d="M21 12H19" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                    <path d="M5 12H3" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </div>
-
-                <!-- Dark Mode Toggle Switch -->
-                <input id="dark-mode-toggle-mobile" type="checkbox" class="hidden dark-mode-toggle">
-
-                <!-- Dark Mode Icon (on right) -->
-                <div class="w-11 h-11 flex justify-center items-center dark-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M3 11.6014C3 16.7922 7.09519 21.0001 12.1469 21.0001C15.273 21.0001 18.0328 19.3887 19.6826 16.9301C20.3756 15.8974 20.7221 15.381 20.41 14.8411C20.0979 14.3012 19.3273 14.3541 17.7861 14.4599C10.8576 14.9353 8.58646 10.8359 8.23195 6.90293C8.066 5.0618 7.98302 4.14123 7.355 3.93743C6.72697 3.73363 6.26281 4.26556 5.3345 5.32941C3.8829 6.99296 3 9.19125 3 11.6014Z"
-                      stroke="#020B1E" stroke-width="1.5" stroke-linecap="round" />
-                  </svg>
-                </div>
-              </label>
-            </div>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP Calculator</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP Vs Lump Sum</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP vs SWP</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">Blog</a>
-            </li>
-          </ul>
+        
           <div class="flex items-center gap-20">
-            <div class="block relative md:w-[400px]">
-              <input type="text"
-                class="md:block hidden py-2.5 pl-3.5 pr-10 border border-[#D0D5DD] shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05)] text-base text-primary-gray bg-transparent rounded-[30px] w-full"
-                placeholder="What are you looking for?" />
-              <button
-                class="md:absolute top-1.5 right-3 p-2 bg-transparent text-primary-black md:text-white md:bg-orange flex justify-center items-center rounded-full">
+            <div class="hidden md:block relative md:w-[400px]">
+              <input type="text" class="md:block hidden py-2.5 pl-3.5 pr-10 border border-[#D0D5DD] shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05)] text-base text-primary-gray bg-transparent rounded-[30px] w-full" placeholder="What are you looking for?" />
+              <button class="md:absolute top-1.5 right-3 p-2 bg-transparent text-primary-black md:text-white md:bg-orange flex justify-center items-center rounded-full">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14 14L11.6667 11.6667M13.3333 7.66667C13.3333 10.7963 10.7963 13.3333 7.66667 13.3333C4.53705 13.3333 2 10.7963 2 7.66667C2 4.53705 4.53705 2 7.66667 2C10.7963 2 13.3333 4.53705 13.3333 7.66667Z"
-                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+<path d="M14 14L11.6667 11.6667M13.3333 7.66667C13.3333 10.7963 10.7963 13.3333 7.66667 13.3333C4.53705 13.3333 2 10.7963 2 7.66667C2 4.53705 4.53705 2 7.66667 2C10.7963 2 13.3333 4.53705 13.3333 7.66667Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>   
+</svg>
 
               </button>
             </div>
+            
           </div>
           <div class="md:ml-auto flex items-center md:gap-6 gap-2">
-            <button
-              class="hidden md:flex py-2.5 px-3.5 border border-[#D0D5DD] rounded-md transition-all duration-500  items-center gap-1.5 text-sm text-orange font-sf_pro_display_medium hover:bg-[#ffefec]">
+           
+            <button class="hidden xl:flex py-2.5 px-3.5 border border-[#D0D5DD] rounded-md transition-all duration-500  items-center gap-1.5 text-sm text-orange font-sf_pro_display_medium hover:bg-[#ffefec]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.9609 6.17188C18.9609 7.56187 20.3409 9.77187 20.6209 12.3219" stroke="#FF5231"
-                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3.48828 12.3688C3.74828 9.82875 5.10828 7.61875 7.08828 6.21875" stroke="#FF5231"
-                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M8.19141 20.9375C9.35141 21.5275 10.6714 21.8575 12.0614 21.8575C13.4014 21.8575 14.6614 21.5575 15.7914 21.0075"
-                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M12.0613 7.70062C13.5966 7.70062 14.8413 6.45598 14.8413 4.92062C14.8413 3.38527 13.5966 2.14062 12.0613 2.14062C10.5259 2.14062 9.28125 3.38527 9.28125 4.92062C9.28125 6.45598 10.5259 7.70062 12.0613 7.70062Z"
-                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M4.83078 19.9194C6.36613 19.9194 7.61078 18.6747 7.61078 17.1394C7.61078 15.604 6.36613 14.3594 4.83078 14.3594C3.29543 14.3594 2.05078 15.604 2.05078 17.1394C2.05078 18.6747 3.29543 19.9194 4.83078 19.9194Z"
-                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M19.1706 19.9194C20.706 19.9194 21.9506 18.6747 21.9506 17.1394C21.9506 15.604 20.706 14.3594 19.1706 14.3594C17.6353 14.3594 16.3906 15.604 16.3906 17.1394C16.3906 18.6747 17.6353 19.9194 19.1706 19.9194Z"
-                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16.9609 6.17188C18.9609 7.56187 20.3409 9.77187 20.6209 12.3219" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.48828 12.3688C3.74828 9.82875 5.10828 7.61875 7.08828 6.21875" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.19141 20.9375C9.35141 21.5275 10.6714 21.8575 12.0614 21.8575C13.4014 21.8575 14.6614 21.5575 15.7914 21.0075" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.0613 7.70062C13.5966 7.70062 14.8413 6.45598 14.8413 4.92062C14.8413 3.38527 13.5966 2.14062 12.0613 2.14062C10.5259 2.14062 9.28125 3.38527 9.28125 4.92062C9.28125 6.45598 10.5259 7.70062 12.0613 7.70062Z" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.83078 19.9194C6.36613 19.9194 7.61078 18.6747 7.61078 17.1394C7.61078 15.604 6.36613 14.3594 4.83078 14.3594C3.29543 14.3594 2.05078 15.604 2.05078 17.1394C2.05078 18.6747 3.29543 19.9194 4.83078 19.9194Z" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19.1706 19.9194C20.706 19.9194 21.9506 18.6747 21.9506 17.1394C21.9506 15.604 20.706 14.3594 19.1706 14.3594C17.6353 14.3594 16.3906 15.604 16.3906 17.1394C16.3906 18.6747 17.6353 19.9194 19.1706 19.9194Z" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               Join Our Supplier Network
             </button>
             <div class="flex items-center md:gap-6 gap-3">
+               <button class="md:hidden block">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#292D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 22L20 20" stroke="#292D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </button>
               <button class="flex flex-col items-center gap-1">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12.62 20.8116C12.28 20.9316 11.72 20.9316 11.38 20.8116C8.48 19.8216 2 15.6916 2 8.69156C2 5.60156 4.49 3.10156 7.56 3.10156C9.38 3.10156 10.99 3.98156 12 5.34156C13.01 3.98156 14.63 3.10156 16.44 3.10156C19.51 3.10156 22 5.60156 22 8.69156C22 15.6916 15.52 19.8216 12.62 20.8116Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12.62 20.8116C12.28 20.9316 11.72 20.9316 11.38 20.8116C8.48 19.8216 2 15.6916 2 8.69156C2 5.60156 4.49 3.10156 7.56 3.10156C9.38 3.10156 10.99 3.98156 12 5.34156C13.01 3.98156 14.63 3.10156 16.44 3.10156C19.51 3.10156 22 5.60156 22 8.69156C22 15.6916 15.52 19.8216 12.62 20.8116Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 <span class="md:block hidden text-sm text-[#344054]">Wishlist</span>
               </button>
               <button class="flex flex-col items-center gap-1">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001"
-                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M9 8H21" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
+<path d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 8H21" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
                 <span class="md:block hidden text-sm text-[#344054]">Cart</span>
               </button>
-              <button class="hidden md:flex flex-col items-center gap-1" data-modal-target="login-modal">
+              <button class="flex flex-col items-center gap-1" data-modal-target="login-modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12.1187 12.7766C12.0487 12.7666 11.9587 12.7666 11.8787 12.7766C10.1187 12.7166 8.71875 11.2766 8.71875 9.50656C8.71875 7.69656 10.1787 6.22656 11.9987 6.22656C13.8087 6.22656 15.2787 7.69656 15.2787 9.50656C15.2687 11.2766 13.8787 12.7166 12.1187 12.7766Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M18.7417 19.3825C16.9617 21.0125 14.6017 22.0025 12.0017 22.0025C9.40172 22.0025 7.04172 21.0125 5.26172 19.3825C5.36172 18.4425 5.96172 17.5225 7.03172 16.8025C9.77172 14.9825 14.2517 14.9825 16.9717 16.8025C18.0417 17.5225 18.6417 18.4425 18.7417 19.3825Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+<path d="M12.1187 12.7766C12.0487 12.7666 11.9587 12.7666 11.8787 12.7766C10.1187 12.7166 8.71875 11.2766 8.71875 9.50656C8.71875 7.69656 10.1787 6.22656 11.9987 6.22656C13.8087 6.22656 15.2787 7.69656 15.2787 9.50656C15.2687 11.2766 13.8787 12.7166 12.1187 12.7766Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.7417 19.3825C16.9617 21.0125 14.6017 22.0025 12.0017 22.0025C9.40172 22.0025 7.04172 21.0125 5.26172 19.3825C5.36172 18.4425 5.96172 17.5225 7.03172 16.8025C9.77172 14.9825 14.2517 14.9825 16.9717 16.8025C18.0417 17.5225 18.6417 18.4425 18.7417 19.3825Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
                 <span class="md:block hidden text-sm text-[#344054]">Profile</span>
               </button>
             </div>
           </div>
-          <button id="toggle-button" class=" relative z-10  w-8 h-8 block lg:hidden">
-            <div class="flex flex-col gap-[5px]">
-              <span class="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-              <span class="w-[10px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-              <span class="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-            </div>
-          </button>
+         
         </div>
       </div>
     </nav>
     <!-- navbar end  -->
     <main>
       <!-- main start  -->
-      <div class="relative pt-28 pb-10">
+      <div class="relative pt-20 md:pt-28 md:pb-10 pb-0">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
+          <div class="flex items-center gap-2.5 sm:hidden mb-4">
+            <a href="#" class="rounded-lg border border-[#E6E8EC] text-[#777E91] transition-all duration-500 hover:border-orange hover:text-orange">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2071 16.2071C14.5976 15.8166 14.5976 15.1834 14.2071 14.7929L11.4142 12L14.2071 9.20711C14.5976 8.81658 14.5976 8.18342 14.2071 7.79289C13.8166 7.40237 13.1834 7.40237 12.7929 7.79289L9.29289 11.2929C8.90237 11.6834 8.90237 12.3166 9.29289 12.7071L12.7929 16.2071C13.1834 16.5976 13.8166 16.5976 14.2071 16.2071Z" fill="currentColor"></path>
+              </svg>
+            </a>
+            <h2 class="text-lg font-medium leading-6 text-gray-900 text-center w-[calc(100%-34px)]"> India</h2>
+          </div>
           <ol class="hidden sm:inline-flex items-center space-x-1 md:space-x-3 py-1.5 mb-3.5">
             <li class="inline-flex items-center">
               <div class=" relative inline-flex">
@@ -211,9 +133,13 @@
             
           </ol>
           
+         
           <div class="block relative pb-8 min-h-[350px] rounded-lg ">
             <img src="assets/images/country-page-hero-img.png" class="w-full lg:h-full h-[350px] object-cover rounded-lg" alt="image"/>
-           
+            <div class="absolute bottom-12 left-2 lg:left-6 bg-white p-2 lg:p-4 rounded-lg z-30 flex flex-col gap-2.5 lg:max-w-max max-w-[330px]">
+                <h3 class="text-xl lg:text-[30px] text-orange font-semibold">India</h3>
+                <p class="text-base lg:text-xl text-secondary-black font-sf_pro_display_medium">From the Taj Mahal to the Himalayas, explore India’s endless wonders.</p>
+            </div>
           </div>
          
         </div>
@@ -1105,7 +1031,7 @@
         
       </div>
        <!-- Top city in india start  -->
-      <div class="relative py-16 ">
+      <div class="relative md:py-16 py-10 ">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
             <h2 class="text-xl lg:text-[32px] font-medium font-sf_pro_display_medium text-secondary-black leading-[23px] mb-6">Top Cities in India</h2>
            <div class="swiper discover-type-slider top-city xl:!overflow-visible overflow-hidden ">
@@ -1205,7 +1131,7 @@
         </div>
       </div>
        <!-- Top sight start  -->
-      <div class="relative py-16 ">
+      <div class="relative md:py-16 py-10 ">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
             <h2 class="text-xl lg:text-[32px] font-medium font-sf_pro_display_medium text-secondary-black leading-[23px] mb-6">Top Sights in Barcelona</h2>
             <div class="swiper city-top-sight  xl:!overflow-visible overflow-hidden ">
@@ -2023,10 +1949,10 @@
         
       </div>
         <!-- all experience start  -->
-      <div class="relative py-16 ">
+      <div class="relative md:py-16 py-10 ">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
         <h2 class="text-xl lg:text-[32px] font-medium font-sf_pro_display_medium text-secondary-black leading-[23px] mb-6">All Experience in India</h2>
-        <div class="flex items-center justify-between gap-6 snap-x mb-6">
+        <div class="flex items-center justify-between gap-6 snap-x mb-6 overflow-x-auto">
           <div class="flex items-center gap-3">
              <div class="select-box city-select-sort">
                          <select name="service" id="service" class=" font-normal text-base text-black ">
@@ -2061,18 +1987,29 @@
                         </select>
                     </div>             
           </div>
-          <button class="flex items-center justify-between bg-white rounded-lg border border-[#D0D5DD] py-2.5 px-3.5 gap-2">
-            Filters
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.3359 5.41919H13.3359" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M4.9974 5.41919H1.66406" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.33073 8.33309C9.94156 8.33309 11.2474 7.02725 11.2474 5.41642C11.2474 3.80559 9.94156 2.49976 8.33073 2.49976C6.7199 2.49976 5.41406 3.80559 5.41406 5.41642C5.41406 7.02725 6.7199 8.33309 8.33073 8.33309Z" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.3333 14.5823H15" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.66406 14.5823H1.66406" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.6667 17.5008C13.2775 17.5008 14.5833 16.195 14.5833 14.5841C14.5833 12.9733 13.2775 11.6675 11.6667 11.6675C10.0558 11.6675 8.75 12.9733 8.75 14.5841C8.75 16.195 10.0558 17.5008 11.6667 17.5008Z" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+         <button data-modal-target="Filter-modal"
+              class="flex items-center justify-between bg-white rounded-lg border border-[#D0D5DD] py-2.5 px-3.5 gap-2">
+              Filters
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3359 5.41919H13.3359" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4.9974 5.41919H1.66406" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M8.33073 8.33309C9.94156 8.33309 11.2474 7.02725 11.2474 5.41642C11.2474 3.80559 9.94156 2.49976 8.33073 2.49976C6.7199 2.49976 5.41406 3.80559 5.41406 5.41642C5.41406 7.02725 6.7199 8.33309 8.33073 8.33309Z"
+                  stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M18.3333 14.5823H15" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6.66406 14.5823H1.66406" stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.6667 17.5008C13.2775 17.5008 14.5833 16.195 14.5833 14.5841C14.5833 12.9733 13.2775 11.6675 11.6667 11.6675C10.0558 11.6675 8.75 12.9733 8.75 14.5841C8.75 16.195 10.0558 17.5008 11.6667 17.5008Z"
+                  stroke="#A5A5A5" stroke-width="1.36364" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
 
-          </button>
+            </button>
         </div>
         <div class="flex items-center justify-between mb-6">
           <h5 class="flex items-center gap-2 text-base md:text-2xl font-sf_pro_display_medium text-[#667085]">
@@ -2086,7 +2023,15 @@
 
             </a>
           </h5>
-          <span class="text-lg text-primary-gray">10 Activities</span>
+          <span class="hidden lg:block text-lg text-primary-gray">10 Activities</span>
+            <button data-modal-target="sort-by"
+              class="lg:hidden flex items-center gap-1 text-base font-medium font-sf_pro_display_medium text-gray-900 leading-[18px]">
+              Sort By
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.0007 6.49967L8.00057 10.4998L3.99805 6.49731" stroke="#111827" stroke-width="1.6"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
         </div>
         <div class="xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:grid hidden">
               <div class="rounded-2xl  swiper-slide relative group ">
@@ -3229,7 +3174,7 @@
       </div>
     
        <!--cta-->
-      <div class="cta py-[40px] lg:py-[80px] w-full">
+      <div class="cta p-0 lg:py-[80px]  w-full">
       <div class="w-full max-w-7xl mx-auto px-4 lg:px-8 ">
         <div class="rounded-[20px] bg-[#6347EA0D]  w-full mx-auto">
           <div class="bg-contain bg-center bg-no-repeat p-6 flex items-center flex-col lg:flex-row gap-6 " style="background-image: url(./assets/images/cta-bg.png);">
@@ -3415,7 +3360,7 @@
       <div class=" py-[40px] lg:py-[80px] w-full">
          <div class="w-full max-w-7xl mx-auto px-4 lg:px-8 ">
              <h2 class="text-xl lg:text-[32px] font-medium font-sf_pro_display_medium text-secondary-black leading-[23px] mb-6">Cities in Spain</h2>
-             <div class="flex items-center gap-3.5 flex-wrap">
+             <div class="flex items-center gap-2.5 md:gap-3.5 flex-wrap">
                 <a href="#" class="flex items-center gap-1 py-2 px-2.5 bg-white rounded-lg text-sm md:text-base text-secondary-black font-sf_pro_display_medium border border-[#E6E8EC] transition-all duration-500 hover:bg-primary-gray/10">
 Barcelona<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.79289 7.79289C9.40237 8.18342 9.40237 8.81658 9.79289 9.20711L12.5858 12L9.79289 14.7929C9.40237 15.1834 9.40237 15.8166 9.79289 16.2071C10.1834 16.5976 10.8166 16.5976 11.2071 16.2071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L11.2071 7.79289C10.8166 7.40237 10.1834 7.40237 9.79289 7.79289Z" fill="#777E91"/>
@@ -3523,7 +3468,7 @@ Figueres<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http:
       <div class=" pb-[40px] lg:pb-[80px] w-full">
          <div class="w-full max-w-7xl mx-auto px-4 lg:px-8 ">
              <h2 class="text-xl lg:text-[32px] font-medium font-sf_pro_display_medium text-secondary-black leading-[23px] mb-6">Activities in Barcelona</h2>
-             <div class="flex items-center gap-3.5 flex-wrap">
+             <div class="flex items-center gap-2.5 md:gap-3.5 flex-wrap">
                 <a href="#" class="flex items-center gap-1 py-2 px-2.5 bg-white rounded-lg text-sm md:text-base text-secondary-black font-sf_pro_display_medium border border-[#E6E8EC] transition-all duration-500 hover:bg-primary-gray/10">
 Barcelona<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.79289 7.79289C9.40237 8.18342 9.40237 8.81658 9.79289 9.20711L12.5858 12L9.79289 14.7929C9.40237 15.1834 9.40237 15.8166 9.79289 16.2071C10.1834 16.5976 10.8166 16.5976 11.2071 16.2071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L11.2071 7.79289C10.8166 7.40237 10.1834 7.40237 9.79289 7.79289Z" fill="#777E91"/>
@@ -4060,78 +4005,663 @@ Figueres<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http:
       </div>
     </footer>
   </div>
-  <div class="modalTrigger modal-home bg-white  max-h-max rounded-2xl p-4" id="login-modal">
-    <span
-      class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  absolute top-4 right-4 w-9 h-9 flex items-center justify-center">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_3692_10400)">
-          <path
-            d="M2.10901 1.01287L5.997 4.90088L9.869 1.02887C9.93686 0.956649 10.0186 0.898871 10.1093 0.859005C10.2001 0.819139 10.2979 0.798006 10.397 0.796875C10.6092 0.796875 10.8127 0.88116 10.9627 1.03119C11.1127 1.18122 11.197 1.3847 11.197 1.59688C11.1989 1.69496 11.1807 1.79238 11.1435 1.88318C11.1064 1.97398 11.0511 2.05622 10.981 2.12488L7.069 5.99688L10.981 9.90888C11.1129 10.0379 11.1902 10.2125 11.197 10.3969C11.197 10.609 11.1127 10.8125 10.9627 10.9626C10.8127 11.1126 10.6092 11.1969 10.397 11.1969C10.295 11.2011 10.1933 11.1841 10.0983 11.1469C10.0033 11.1097 9.91701 11.0532 9.845 10.9809L5.997 7.09288L2.11701 10.9729C2.04941 11.0427 1.96866 11.0984 1.87941 11.1369C1.79016 11.1753 1.69418 11.1957 1.59701 11.1969C1.38483 11.1969 1.18135 11.1126 1.03132 10.9626C0.881291 10.8125 0.797005 10.609 0.797005 10.3969C0.79514 10.2988 0.813338 10.2014 0.850481 10.1106C0.887625 10.0198 0.942931 9.93753 1.01301 9.86888L4.925 5.99688L1.01301 2.08487C0.881153 1.95588 0.803837 1.7812 0.797005 1.59688C0.797005 1.3847 0.881291 1.18122 1.03132 1.03119C1.18135 0.88116 1.38483 0.796875 1.59701 0.796875C1.78901 0.799275 1.97301 0.876875 2.10901 1.01287Z"
-            fill="black" />
-        </g>
-        <defs>
-          <clipPath id="clip0_3692_10400">
-            <rect width="12" height="12" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </span>
-    <div class="w-full flex flex-col">
+   <!--sort by model-->
+  <div class="modalTrigger modal-home bg-white  max-h-max rounded-2xl p-4  flex-col" id="sort-by">
+    <div class="flex items-center gap-3 pb-6 border-b border-[#D0D5DD] mb-4 w-full">
+      <span
+        class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  absolute top-4 left-4 w-9 h-9 flex items-center justify-center">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_3692_10400)">
+            <path
+              d="M2.10901 1.01287L5.997 4.90088L9.869 1.02887C9.93686 0.956649 10.0186 0.898871 10.1093 0.859005C10.2001 0.819139 10.2979 0.798006 10.397 0.796875C10.6092 0.796875 10.8127 0.88116 10.9627 1.03119C11.1127 1.18122 11.197 1.3847 11.197 1.59688C11.1989 1.69496 11.1807 1.79238 11.1435 1.88318C11.1064 1.97398 11.0511 2.05622 10.981 2.12488L7.069 5.99688L10.981 9.90888C11.1129 10.0379 11.1902 10.2125 11.197 10.3969C11.197 10.609 11.1127 10.8125 10.9627 10.9626C10.8127 11.1126 10.6092 11.1969 10.397 11.1969C10.295 11.2011 10.1933 11.1841 10.0983 11.1469C10.0033 11.1097 9.91701 11.0532 9.845 10.9809L5.997 7.09288L2.11701 10.9729C2.04941 11.0427 1.96866 11.0984 1.87941 11.1369C1.79016 11.1753 1.69418 11.1957 1.59701 11.1969C1.38483 11.1969 1.18135 11.1126 1.03132 10.9626C0.881291 10.8125 0.797005 10.609 0.797005 10.3969C0.79514 10.2988 0.813338 10.2014 0.850481 10.1106C0.887625 10.0198 0.942931 9.93753 1.01301 9.86888L4.925 5.99688L1.01301 2.08487C0.881153 1.95588 0.803837 1.7812 0.797005 1.59688C0.797005 1.3847 0.881291 1.18122 1.03132 1.03119C1.18135 0.88116 1.38483 0.796875 1.59701 0.796875C1.78901 0.799275 1.97301 0.876875 2.10901 1.01287Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_3692_10400">
+              <rect width="12" height="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+      <p class="text-lg font-semibold leading-[21px] text-gray-900 text-center w-full">Sort by</p>
+    </div>
+    <div class="grid grid-cols-1 gap-4">
+      <div class="block">
+        <input type="radio" name="radio-in-form"
+          class="hidden checked:bg-no-repeat checked:bg-center peer checked:border-indigo-500 checked:bg-indigo-100"
+          id="Recommended" checked>
+        <label for="Recommended"
+          class="flex block w-full bg-white rounded-md text-sm peer-checked:bg-[#F6F7F7]">
+          <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1"></span>
+          <h5 class="text-lg font-medium font-sf_pro_display_medium text-[#667085] leading-[23px]">Recommended</h5>
+        </label>
+      </div>
+      <div class="block">
+        <input type="radio" name="radio-in-form"
+          class="hidden checked:bg-no-repeat checked:bg-center peer checked:border-indigo-500 checked:bg-indigo-100"
+          id="Price-L2h">
+        <label for="Price-L2h"
+          class="flex block w-full bg-white rounded-md text-sm peer-checked:bg-[#F6F7F7]">
+          <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1"></span>
+          <h5 class="text-lg font-medium font-sf_pro_display_medium text-[#667085] leading-[23px]">Price - Low to high</h5>
+        </label>
+      </div>
+      <div class="block">
+        <input type="radio" name="radio-in-form"
+          class="hidden checked:bg-no-repeat checked:bg-center peer checked:border-indigo-500 checked:bg-indigo-100"
+          id="Price-H2L">
+        <label for="Price-H2L"
+          class="flex block w-full bg-white rounded-md text-sm peer-checked:bg-[#F6F7F7]">
+          <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1"></span>
+          <h5 class="text-lg font-medium font-sf_pro_display_medium text-[#667085] leading-[23px]">Price - High to Low</h5>
+        </label>
+      </div>
+      <div class="block">
+        <input type="radio" name="radio-in-form"
+          class="hidden checked:bg-no-repeat checked:bg-center peer checked:border-indigo-500 checked:bg-indigo-100"
+          id="Rating">
+        <label for="Rating"
+          class="flex block w-full bg-white rounded-md text-sm peer-checked:bg-[#F6F7F7]">
+          <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-1"></span>
+          <h5 class="text-lg font-medium font-sf_pro_display_medium text-[#667085] leading-[23px]">Rating</h5>
+        </label>
+      </div>
+    </div>
+  </div>
+  <!--filter model-->
+   <div
+    class="modalTrigger modal-home bg-white rounded-2xl px-6 py-8 flex-col w-full max-w-[700px] h-screen max-h-[800px]"
+    id="Filter-modal">
+    <div class="flex items-center justify-between pb-5 border-b border-[#D0D5DD] mb-4 w-full">
+      <h4 class="text-xl leading-6 font-semibold text-gray-900 w-full">Sort by</h4>
+      <span
+        class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  w-9 h-9 flex items-center justify-center">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_3692_10400)">
+            <path
+              d="M2.10901 1.01287L5.997 4.90088L9.869 1.02887C9.93686 0.956649 10.0186 0.898871 10.1093 0.859005C10.2001 0.819139 10.2979 0.798006 10.397 0.796875C10.6092 0.796875 10.8127 0.88116 10.9627 1.03119C11.1127 1.18122 11.197 1.3847 11.197 1.59688C11.1989 1.69496 11.1807 1.79238 11.1435 1.88318C11.1064 1.97398 11.0511 2.05622 10.981 2.12488L7.069 5.99688L10.981 9.90888C11.1129 10.0379 11.1902 10.2125 11.197 10.3969C11.197 10.609 11.1127 10.8125 10.9627 10.9626C10.8127 11.1126 10.6092 11.1969 10.397 11.1969C10.295 11.2011 10.1933 11.1841 10.0983 11.1469C10.0033 11.1097 9.91701 11.0532 9.845 10.9809L5.997 7.09288L2.11701 10.9729C2.04941 11.0427 1.96866 11.0984 1.87941 11.1369C1.79016 11.1753 1.69418 11.1957 1.59701 11.1969C1.38483 11.1969 1.18135 11.1126 1.03132 10.9626C0.881291 10.8125 0.797005 10.609 0.797005 10.3969C0.79514 10.2988 0.813338 10.2014 0.850481 10.1106C0.887625 10.0198 0.942931 9.93753 1.01301 9.86888L4.925 5.99688L1.01301 2.08487C0.881153 1.95588 0.803837 1.7812 0.797005 1.59688C0.797005 1.3847 0.881291 1.18122 1.03132 1.03119C1.18135 0.88116 1.38483 0.796875 1.59701 0.796875C1.78901 0.799275 1.97301 0.876875 2.10901 1.01287Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_3692_10400">
+              <rect width="12" height="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </span>
+    </div>
 
-      <h2 class="text-lg leading-6 font-semibold text-primary-black mb-8 mt-4 text-center">Log in to Continue</h2>
-      <p class="text-base  font-sf_pro_display_medium text-primary-black font-normal mb-4">Check out easily and access
-        tickets on any device with your <span class="text-orange">VACAYOUT</span> account.</p>
-      <form action="#" class="w-full">
-        <div class="relative mb-4">
-          <label class="flex  items-center mb-1.5 text-white text-sm leading-[22px] font-medium">Email
+    <div class="flex flex-col gap-4 w-full">
+      <div class="block">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Applied Filters</h5>
+        <div class="flex items-center justify-start gap-2.5 flex-wrap w-full">
+          <p
+            class="p-2.5 pr-4 rounded-lg border border-orange flex items-center w-max whitespace-nowrap gap-1 text-base leading-[19px] font-medium font-sf_pro_display_medium text-orange">
+            Ciutadella de Menorca
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <g clip-path="url(#clip0_3855_35843)">
+                <path
+                  d="M2.11096 1.01287L5.99896 4.90088L9.87096 1.02887C9.93881 0.956649 10.0206 0.898871 10.1113 0.859005C10.202 0.819139 10.2999 0.798006 10.399 0.796875C10.6111 0.796875 10.8146 0.88116 10.9646 1.03119C11.1147 1.18122 11.199 1.3847 11.199 1.59688C11.2008 1.69496 11.1826 1.79238 11.1455 1.88318C11.1083 1.97398 11.053 2.05622 10.983 2.12488L7.07096 5.99688L10.983 9.90888C11.1148 10.0379 11.1921 10.2125 11.199 10.3969C11.199 10.609 11.1147 10.8125 10.9646 10.9626C10.8146 11.1126 10.6111 11.1969 10.399 11.1969C10.297 11.2011 10.1953 11.1841 10.1003 11.1469C10.0052 11.1097 9.91897 11.0532 9.84696 10.9809L5.99896 7.09288L2.11896 10.9729C2.05136 11.0427 1.97061 11.0984 1.88136 11.1369C1.79211 11.1753 1.69613 11.1957 1.59896 11.1969C1.38679 11.1969 1.1833 11.1126 1.03327 10.9626C0.883244 10.8125 0.798958 10.609 0.798958 10.3969C0.797093 10.2988 0.815291 10.2014 0.852434 10.1106C0.889578 10.0198 0.944884 9.93753 1.01496 9.86888L4.92696 5.99688L1.01496 2.08487C0.883106 1.95588 0.80579 1.7812 0.798958 1.59688C0.798958 1.3847 0.883244 1.18122 1.03327 1.03119C1.1833 0.88116 1.38679 0.796875 1.59896 0.796875C1.79096 0.799275 1.97496 0.876875 2.11096 1.01287Z"
+                  fill="#FF5231" />
+              </g>
+              <defs>
+                <clipPath id="clip0_3855_35843">
+                  <rect width="12" height="12" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </p>
+        </div>
+      </div>
+      <!-- Time -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Time</h5>
+        <div class="flex flex-col gap-2.5 ">
+          <div class="block">
+            <input id="time-1" type="checkbox" name="time-1" class="peer hidden" />
+            <label for="time-1"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              In the Morning, 8 AM - 12 PM
+            </label>
+          </div>
 
-          </label>
-          <input type="text" id="default-search"
-            class="block w-full px-4 py-2 text-sm leading-[26px] font-normal shadow-xs text-white bg-[#0C0C0C] border border-transparent rounded-lg placeholder-[#4D4D4D] outline-none hover:border-white/20 focus:border-[#F99D1A] transition-all duration-200"
-            placeholder="Enter your email address" required="">
-        </div>
+          <div class="block">
+            <input id="time-2" type="checkbox" name="time-2" class="peer hidden" />
+            <label for="time-2"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              In the Afternoon, 1 PM - 4 PM
+            </label>
+          </div>
 
-        <div class="flex items-center justify-end w-full mb-[16px]">
-          <a href="#" data-modal-target="forgot-psw"
-            class="text-sm leading-[18px] font-medium text-[#F99D1A] transition-all duration-500 hover:text-[#bc730a] text-right">Forgot
-            password?</a>
+          <div class="block">
+            <input id="time-3" type="checkbox" name="time-3" class="peer hidden" />
+            <label for="time-3"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              In the evening, 5 PM- 12 AM
+            </label>
+          </div>
         </div>
-        <button type="submit"
-          class="py-3 px-5 mb-4 rounded-lg bg-[#F99D1A] text-black text-base leading-5 font-medium text-center w-full transition-all duration-500 hover:bg-[#bc730a]">Sign
-          In</button>
-        <div class="flex items-center gap-5">
-          <div class="w-full h-px bg-gradient-to-r from-black to-[#4D4D4D]"></div>
-          <p class="text-xs leading-[18px] text-[#4D4D4D]">OR</p>
-          <div class="w-full h-px bg-gradient-to-l from-black to-[#4D4D4D]"></div>
+      </div>
+      <!-- Destinations -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Destinations</h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="Sagrada-Familia" type="checkbox" name="Sagrada-Familia" class="peer hidden" />
+            <label for="Sagrada-Familia"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Sagrada Familia
+            </label>
+          </div>
+          <div class="block">
+            <input id="Casa-Batlló" type="checkbox" name="Casa-Batlló" class="peer hidden" />
+            <label for="Casa-Batlló"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Casa Batlló
+            </label>
+          </div>
+          <div class="block">
+            <input id="Olympic-Harbor" type="checkbox" name="Olympic-Harbor" class="peer hidden" />
+            <label for="Olympic-Harbor"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Olympic Harbor
+            </label>
+          </div>
+          <div class="block">
+            <input id="Ciutadella-Park" type="checkbox" name="Ciutadella-Park" class="peer hidden" />
+            <label for="Ciutadella-Park"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Ciutadella Park
+            </label>
+          </div>
+          <div class="block">
+            <input id="Casa-Milà" type="checkbox" name="Casa-Milà" class="peer hidden" />
+            <label for="Casa-Milà"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Casa Milà
+            </label>
+          </div>
+          <div class="block">
+            <input id="Port-Vell" type="checkbox" name="Port-Vell" class="peer hidden" />
+            <label for="Port-Vell"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Port Vell
+            </label>
+          </div>
+          <div class="block">
+            <input id="Passeig-de-Gràcia" type="checkbox" name="Passeig-de-Gràcia" class="peer hidden" />
+            <label for="Passeig-de-Gràcia"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Passeig de Gràcia
+            </label>
+          </div>
+          <div class="block">
+            <input id="Arc-de-Triomf" type="checkbox" name="Arc-de-Triomf" class="peer hidden" />
+            <label for="Arc-de-Triomf"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Arc de Triomf
+            </label>
+          </div>
+          <div class="block">
+            <input id="Barcelona-Cathedral" type="checkbox" name="Barcelona-Cathedral" class="peer hidden" />
+            <label for="Barcelona-Cathedral"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Barcelona Cathedral
+            </label>
+          </div>
+          <div class="block destination hidden">
+
+            <input id="Taj-mahal-india" type="checkbox" name="Taj-mahal-india" class="peer hidden" />
+            <label for="Taj-mahal-india"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Taj mahal india
+            </label>
+          </div>
+          <a
+            class="md:block hidden see-more-destinations text-orange py-2 px-4 rounded-lg border border-orange cursor-pointer">
+            Show more Destinations</a>
         </div>
-        <button type="button"
-          class="w-full rounded-lg my-4 flex items-center justify-center gap-2.5 py-3 px-5 bg-white text-[#002225] text-base font-medium leading-5">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-            <g clip-path="url(#clip0_13119_9200)">
-              <path
-                d="M20.339 8.14769C20.4279 8.14769 20.5 8.21976 20.5 8.30866V9.99878C20.5 10.6314 20.4412 11.2499 20.3285 11.8499C19.4568 16.5104 15.3509 20.0325 10.4295 19.9985C4.90725 19.9605 0.487799 15.4985 0.500025 9.97624C0.512174 4.46386 4.98475 -0.0012207 10.5 -0.0012207C13.2021 -0.0012207 15.6537 1.07073 17.4537 2.81198C17.5187 2.87483 17.5203 2.97843 17.4564 3.04233L15.0653 5.43339C15.0038 5.49495 14.9043 5.49655 14.8412 5.43651C13.7115 4.36116 12.183 3.70097 10.5 3.70097C7.02456 3.70097 4.22592 6.47972 4.20233 9.95507C4.17862 13.4532 7.00737 16.2966 10.5 16.2966C13.3338 16.2966 15.7306 14.4245 16.5209 11.8499H10.661C10.5721 11.8499 10.5 11.7778 10.5 11.6889V8.30862C10.5 8.21972 10.5721 8.14765 10.661 8.14765H20.339V8.14769Z"
-                fill="#2196F3" />
-              <path
-                d="M4.77922 7.36136L1.74219 5.16698C3.44602 2.0853 6.7293 -0.0012207 10.4995 -0.0012207C13.2016 -0.0012207 15.6532 1.07073 17.4532 2.81198C17.5182 2.87483 17.5199 2.97843 17.4559 3.04233L15.0649 5.43339C15.0034 5.49483 14.904 5.49675 14.8411 5.43683C13.7113 4.36128 12.1827 3.70101 10.4995 3.70101C7.96313 3.70101 5.7768 5.20038 4.77922 7.36136Z"
-                fill="#F44336" />
-              <path
-                d="M17.8364 16.7948C16.0102 18.7654 13.3994 19.9988 10.5008 19.9988C6.5857 19.9988 3.19617 17.7489 1.55469 14.4712L4.65527 12.3464C5.5857 14.6616 7.8525 16.2966 10.5008 16.2966C12.1627 16.2966 13.6742 15.6527 14.7994 14.6008L17.8364 16.7948Z"
-                fill="#4CAF50" />
-              <path
-                d="M4.20223 9.99879C4.20223 10.8286 4.36277 11.6209 4.65453 12.3465L1.55391 14.4712C0.879492 13.1255 0.5 11.6064 0.5 9.99879C0.5 8.24629 0.950703 6.59918 1.74266 5.16699L4.77969 7.36137C4.40906 8.16336 4.20223 9.05715 4.20223 9.99879Z"
-                fill="#FFC107" />
-            </g>
-            <defs>
-              <clipPath id="clip0_13119_9200">
-                <rect width="20" height="20" fill="white" transform="translate(0.5 -0.0012207)" />
-              </clipPath>
-            </defs>
-          </svg>
-          Sign In With Google
-        </button>
-        <p class="text-sm font-normal text-white text-center">Don't have an account? <span
-            class="text-[#F99D1A] cursor-pointer font-medium  " data-modal-target="Sign_up">Register</span></p>
-      </form>
+      </div>
+      <!-- Interests -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Interests</h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="Local-Culture" type="checkbox" name="Local-Culture" class="peer hidden" />
+            <label for="Local-Culture"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Local Culture
+            </label>
+          </div>
+          <div class="block">
+            <input id="Architectural-Marvels" type="checkbox" name="Architectural-Marvels" class="peer hidden" />
+            <label for="Architectural-Marvels"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Architectural Marvels
+            </label>
+          </div>
+          <div class="block">
+            <input id="City-Sightseeing" type="checkbox" name="City-Sightseeing" class="peer hidden" />
+            <label for="City-Sightseeing"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              City Sightseeing
+            </label>
+          </div>
+          <div class="block">
+            <input id="Art-&-Museums" type="checkbox" name="Art-&-Museums" class="peer hidden" />
+            <label for="Art-&-Museums"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Art & Museums
+            </label>
+          </div>
+          <div class="block">
+            <input id="Food-&-Dining" type="checkbox" name="Food-&-Dining" class="peer hidden" />
+            <label for="Food-&-Dining"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Food & Dining
+            </label>
+          </div>
+          <div class="block">
+            <input id="Adventure-&-Outdoor" type="checkbox" name="Adventure-&-Outdoor" class="peer hidden" />
+            <label for="Adventure-&-Outdoor"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Adventure & Outdoor
+            </label>
+          </div>
+          <div class="block">
+            <input id="History-&-Heritage" type="checkbox" name="History-&-Heritage" class="peer hidden" />
+            <label for="History-&-Heritage"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              History & Heritage
+            </label>
+          </div>
+          <div class="block">
+            <input id="Family-Friendly" type="checkbox" name="Family-Friendly" class="peer hidden" />
+            <label for="Family-Friendly"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Family-Friendly
+            </label>
+          </div>
+          <div class="block">
+            <input id="Workshops-&-Learning" type="checkbox" name="Workshops-&-Learning" class="peer hidden" />
+            <label for="Workshops-&-Learning"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Workshops & Learning
+            </label>
+          </div>
+          <div class="block destination hidden">
+
+            <input id="extra-1" type="checkbox" name="extra-1" class="peer hidden" />
+            <label for="extra-1"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              extra-1
+            </label>
+          </div>
+          <a
+            class="md:block hidden see-more-destinations text-orange py-2 px-4 rounded-lg border border-orange cursor-pointer">
+            Show more interests</a>
+        </div>
+      </div>
+      <!-- Categories -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Categories</h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="Architecture" type="checkbox" name="Architecture" class="peer hidden" />
+            <label for="Architecture"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Architecture
+            </label>
+          </div>
+          <div class="block">
+            <input id="Museums" type="checkbox" name="Museums" class="peer hidden" />
+            <label for="Museums"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Museums
+            </label>
+          </div>
+          <div class="block">
+            <input id="Tours" type="checkbox" name="Tours" class="peer hidden" />
+            <label for="Tours"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Tours
+            </label>
+          </div>
+          <div class="block">
+            <input id="Attractions" type="checkbox" name="Attractions" class="peer hidden" />
+            <label for="Attractions"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Attractions
+            </label>
+          </div>
+          <div class="block">
+            <input id="Workshops-&-Classes" type="checkbox" name="Workshops-&-Classes" class="peer hidden" />
+            <label for="Workshops-&-Classes"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Workshops & Classes​
+            </label>
+          </div>
+          <div class="block">
+            <input id="Activities" type="checkbox" name="Activities" class="peer hidden" />
+            <label for="Activities"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Activities
+            </label>
+          </div>
+          <div class="block">
+            <input id="Food-&-Drink" type="checkbox" name="Food-&-Drink" class="peer hidden" />
+            <label for="Food-&-Drink"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Food-&-Drink
+            </label>
+          </div>
+          <div class="block">
+            <input id="Shows-&-Musicals" type="checkbox" name="Shows-&-Musicals" class="peer hidden" />
+            <label for="Shows-&-Musicals"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Shows & Musicals
+            </label>
+          </div>
+          <div class="block">
+            <input id="Transportation" type="checkbox" name="Transportation" class="peer hidden" />
+            <label for="Transportation"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Transportation
+            </label>
+          </div>
+          <div class="block destination hidden">
+            <input id="extra-1" type="checkbox" name="extra-1" class="peer hidden" />
+            <label for="extra-1"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              extra-1
+            </label>
+          </div>
+          <a
+            class="md:block hidden see-more-destinations text-orange py-2 px-4 rounded-lg border border-orange cursor-pointer">Show
+            more Categories</a>
+        </div>
+      </div>
+      <!-- price -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Languages </h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="relative">
+            <label for="min-price" class="text-base leading-[19px] text-gray-900 mb-1 block">Min. price</label>
+            <input type="text" placeholder="€10.00" class="py-3 px-4 bg-white border border-[#E6E8EC] w-full max-w-[160px] placeholder:text-[#A7AEB0] text-gray-900 rounded-lg text-sm leading-5 tracking-[0.14px]">
+          </div>
+           <div class="relative">
+            <label for="max-price" class="text-base leading-[19px] text-gray-900 mb-1 block">Max. price</label>
+            <input type="text" placeholder="€30.00" class="py-3 px-4 bg-white border border-[#E6E8EC] w-full max-w-[160px] placeholder:text-[#A7AEB0] text-gray-900 rounded-lg text-sm leading-5 tracking-[0.14px]">
+          </div>
+        </div>
+      </div>
+      <!-- Languages  -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Languages </h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="English" type="checkbox" name="English" class="peer hidden" />
+            <label for="English"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              English
+            </label>
+          </div>
+          <div class="block">
+            <input id="Spanish" type="checkbox" name="Spanish" class="peer hidden" />
+            <label for="Spanish"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Spanish
+            </label>
+          </div>
+          <div class="block">
+            <input id="French" type="checkbox" name="French" class="peer hidden" />
+            <label for="French"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              French
+            </label>
+          </div>
+          <div class="block">
+            <input id="German" type="checkbox" name="German" class="peer hidden" />
+            <label for="German"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              German
+            </label>
+          </div>
+          <div class="block">
+            <input id="Italian" type="checkbox" name="Italian" class="peer hidden" />
+            <label for="Italian"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Italian
+            </label>
+          </div>
+          <div class="block">
+            <input id="Chinese" type="checkbox" name="Chinese" class="peer hidden" />
+            <label for="Chinese"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Chinese
+            </label>
+          </div>
+          <div class="block">
+            <input id="Russian" type="checkbox" name="Russian" class="peer hidden" />
+            <label for="Russian"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Russian
+            </label>
+          </div>
+          <div class="block">
+            <input id="Korean" type="checkbox" name="Korean" class="peer hidden" />
+            <label for="Korean"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Korean
+            </label>
+          </div>
+          <div class="block">
+            <input id="Japanese" type="checkbox" name="Japanese" class="peer hidden" />
+            <label for="Japanese"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Japanese
+            </label>
+          </div>
+          <div class="block">
+            <input id="Portuguese" type="checkbox" name="Portuguese" class="peer hidden" />
+            <label for="Portuguese"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Portuguese
+            </label>
+          </div>
+          <div class="block destination hidden">
+            <input id="extra-1" type="checkbox" name="extra-1" class="peer hidden" />
+            <label for="extra-1"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              extra-1
+            </label>
+          </div>
+          <a
+            class="md:block hidden see-more-destinations text-orange py-2 px-4 rounded-lg border border-orange cursor-pointer">
+            Show more Languages
+          </a>
+        </div>
+      </div>
+      <!-- Duration  -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Duration </h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="Up-to-1-hour" type="checkbox" name="Up-to-1-hour" class="peer hidden" />
+            <label for="Up-to-1-hour"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Up-to-1-hour
+            </label>
+          </div>
+          <div class="block">
+            <input id="1-to-4-hour" type="checkbox" name="1-to-4-hour" class="peer hidden" />
+            <label for="1-to-4-hour"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              1 to 4 hour
+            </label>
+          </div>
+          <div class="block">
+            <input id="1-to-4-hours" type="checkbox" name="1-to-4-hours" class="peer hidden" />
+            <label for="1-to-4-hours"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              1 to 4 hours
+            </label>
+          </div>
+          <div class="block">
+            <input id="Over-1-day" type="checkbox" name="Over-1-day" class="peer hidden" />
+            <label for="Over-1-day"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Over 1 day
+            </label>
+          </div>
+          <div class="block">
+            <input id="5+-days" type="checkbox" name="5+-days" class="peer hidden" />
+            <label for="5+-days"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              5+ days
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <!-- Services  -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Services</h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="Wheelchair-Accessible" type="checkbox" name="Wheelchair-Accessible" class="peer hidden" />
+            <label for="Wheelchair-Accessible"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Wheelchair Accessible
+            </label>
+          </div>
+          <div class="block">
+            <input id="Private-tour" type="checkbox" name="Private-tour" class="peer hidden" />
+            <label for="Private-tour"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Private tour
+            </label>
+          </div>
+          <div class="block">
+            <input id="Stroller-Accessible" type="checkbox" name="Stroller-Accessible" class="peer hidden" />
+            <label for="Stroller-Accessible"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Stroller Accessible
+            </label>
+          </div>
+          <div class="block">
+            <input id="Skip-the-line" type="checkbox" name="Skip-the-line" class="peer hidden" />
+            <label for="Skip-the-line"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Skip the line
+            </label>
+          </div>
+          <div class="block">
+            <input id="Service-Animals-Allowed" type="checkbox" name="Service-Animals-Allowed" class="peer hidden" />
+            <label for="Service-Animals-Allowed"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Service Animals Allowed
+            </label>
+          </div>
+          <div class="block">
+            <input id="Hotel-pickup-possible" type="checkbox" name="Hotel-pickup-possible" class="peer hidden" />
+            <label for="Hotel-pickup-possible"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Hotel pickup possible
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Departs from  -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Departs from</h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="Gothic-Quarter" type="checkbox" name="Gothic-Quarter" class="peer hidden" />
+            <label for="Gothic-Quarter"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Gothic Quarter
+            </label>
+          </div>
+          <div class="block">
+            <input id="Eixample" type="checkbox" name="Eixample" class="peer hidden" />
+            <label for="Eixample"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Eixample
+            </label>
+          </div>
+          <div class="block">
+            <input id="El-Raval" type="checkbox" name="El-Raval" class="peer hidden" />
+            <label for="El-Raval"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              El Raval
+            </label>
+          </div>
+          <div class="block">
+            <input id="Gràcia" type="checkbox" name="Gràcia" class="peer hidden" />
+            <label for="Gràcia"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Gràcia
+            </label>
+          </div>
+          <div class="block">
+            <input id="Barceloneta" type="checkbox" name="Barceloneta" class="peer hidden" />
+            <label for="Barceloneta"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              Barceloneta
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <!-- Star rating -->
+      <div class="p-3.5 rounded-2xl bg-[#F6F7F7]">
+        <h5 class="text-lg leading-[21px] font-semibold text-gray-900 mb-4">Star rating</h5>
+        <div class="flex flex-wrap gap-2.5 ">
+          <div class="block">
+            <input id="2.5+" type="checkbox" name="2.5+" class="peer hidden" />
+            <label for="2.5+"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              2.5+
+            </label>
+          </div>
+          <div class="block">
+            <input id="3.0+" type="checkbox" name="3.0+" class="peer hidden" />
+            <label for="3.0+"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              3.0+
+            </label>
+          </div>
+          <div class="block">
+            <input id="3.5+" type="checkbox" name="3.5+" class="peer hidden" />
+            <label for="3.5+"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              3.5+
+            </label>
+          </div>
+          <div class="block">
+            <input id="4.0+" type="checkbox" name="4.0+" class="peer hidden" />
+            <label for="4.0+"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              4.0+
+            </label>
+          </div>
+          <div class="block">
+            <input id="4.5+" type="checkbox" name="4.5+" class="peer hidden" />
+            <label for="4.5+"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              4.5+
+            </label>
+          </div>
+          <div class="block">
+            <input id="5" type="checkbox" name="5" class="peer hidden" />
+            <label for="5"
+              class="block py-2 px-4 rounded-lg text-base font-medium font-sf_pro_display_medium text-gray-900 border w-max border-[#D0D5DD] whitespace-nowrap cursor-pointer transition-all duration-300 peer-checked:text-orange peer-checked:border-orange">
+              5
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="overlay-modal w-full h-screen z-[500] fixed top-0 left-0 opacity-0 invisible"></div>
@@ -4141,78 +4671,9 @@ Figueres<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http:
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    function increaseValue(button, limit) {
-      const numberInput = button.parentElement.querySelector('.number');
-      var value = parseInt(numberInput.innerHTML, 10);
-      if (isNaN(value)) value = 0;
-      if (limit && value >= limit) return;
-      numberInput.innerHTML = value + 1;
-    }
 
 
-    function decreaseValue(button) {
-      const numberInput = button.parentElement.querySelector('.number');
-      var value = parseInt(numberInput.innerHTML, 10);
-      if (isNaN(value)) value = 0;
-      if (value < 1) return;
-      numberInput.innerHTML = value - 1;
-    }
-  </script>
-  <script>
-    $(".basicDate").flatpickr({
-      enableTime: true,
-      dateFormat: "F d, Y"
-    });
-  </script>
 
-<script>
-    var swiper = new Swiper(".tour-expert-mobile", {
-      slidesPerView: "auto",
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-  
-  <script>
-    var swiper = new Swiper(".tour-hero-mobile", {
-      slidesPerView: "auto",
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
-
-  <script>
-    $(document).ready(function () {
-      $('.dropdown-toggle').on('click', function (e) {
-        e.stopPropagation(); // prevent event from bubbling up
-        const $menu = $(this).siblings('.dropdown-menu');
-
-        // Toggle this menu
-        $menu.toggle();
-
-        // Optionally hide other open dropdowns
-        // $('.dropdown-menu').not($menu).hide();
-      });
-
-      // Prevent clicks inside the dropdown menu from closing it
-      $('.dropdown-menu').on('click', function (e) {
-        e.stopPropagation();
-      });
-
-      // Click outside to close all dropdowns
-      $(document).on('click', function () {
-        $('.dropdown-menu').hide();
-      });
-    });
-
-  </script>
 </body>
 
 </html>
