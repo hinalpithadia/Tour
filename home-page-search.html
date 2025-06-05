@@ -22,54 +22,21 @@
   <div class="bg-lightgray ">
     <!-- navbar start  -->
     <nav
-      class="fixed z-30 w-full  border-b border-[#D0D5DD]  flex justify-between py-2.5 bg-white/50 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05);] backdrop-blur-[6px]  items-center transition-all duration-200">
+      class="fixed z-30 w-full   flex justify-between py-2.5 bg-white/50 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05);] backdrop-blur-[13px]  items-center transition-all duration-200">
       <div class=" w-full mx-auto  px-3 container">
         <div class="flex md:justify-start justify-between items-center">
 
           <a href="index.html"
             class="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap ">
-            <img src="assets/images/logo.png" alt="logo">
+            <img src="assets/images/logo-white.png" alt="logo">
           </a>
-
-          <ul id="toggle-menu"
-            class="main-link fixed left-0 right-0 z-0 top-[90px] lg:top-0 transform transition duration-500 lg:relative max-lg:gap-6 flex flex-col lg:flex-row gap-10 lg:gap-8 lg:p-10 p-0 pb-6 lg:min-h-0 lg:px-0 lg:py-0 lg:translate-y-0 -translate-y-[200%] lg:bg-transparent bg-[#F4F4F4] dark:lg:bg-transparent dark:bg-[#08193c]  lg:rounded-none rounded-2xl hidden">
-            <div
-              class="flex lg:hidden items-center justify-between p-5 border-b border-[#DCD7D7] dark:border-[#263c6b]">
-              <span class="text-sm font-medium text-[#020B1E] dark:text-white">Light Mode</span>
-            
-            </div>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP Calculator</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP Vs Lump Sum</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">SIP vs SWP</a>
-            </li>
-            <li class="lg:px-0 px-5">
-              <a href="#" class="nav_link ">Blog</a>
-            </li>
-          </ul>
-          <div class="flex items-center gap-20">
-            <div class="block relative md:w-[400px]">
-              <input type="text"
-                class="md:block hidden py-2.5 pl-3.5 pr-10 border border-[#D0D5DD] shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05)] text-base text-primary-gray bg-transparent rounded-[30px] w-full"
-                placeholder="What are you looking for?" />
-              <button
-                class="md:absolute top-1.5 right-3 p-2 bg-transparent text-primary-black md:text-white md:bg-orange flex justify-center items-center rounded-full">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14 14L11.6667 11.6667M13.3333 7.66667C13.3333 10.7963 10.7963 13.3333 7.66667 13.3333C4.53705 13.3333 2 10.7963 2 7.66667C2 4.53705 4.53705 2 7.66667 2C10.7963 2 13.3333 4.53705 13.3333 7.66667Z"
-                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-
-              </button>
-            </div>
+        
+             <div class="flex items-center gap-20">
+           
           </div>
           <div class="md:ml-auto flex items-center md:gap-6 gap-2">
             <button
-              class="hidden md:flex py-2.5 px-3.5 border border-[#D0D5DD] rounded-md transition-all duration-500  items-center gap-1.5 text-sm text-orange font-sf_pro_display_medium hover:bg-[#ffefec]">
+              class="hidden md:flex py-2.5 px-3.5 bg-[#ffefec] rounded-md transition-all duration-500  items-center gap-1.5 text-sm text-orange font-sf_pro_display_medium hover:bg-[#ffefec]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.9609 6.17188C18.9609 7.56187 20.3409 9.77187 20.6209 12.3219" stroke="#FF5231"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -95,47 +62,47 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.62 20.8116C12.28 20.9316 11.72 20.9316 11.38 20.8116C8.48 19.8216 2 15.6916 2 8.69156C2 5.60156 4.49 3.10156 7.56 3.10156C9.38 3.10156 10.99 3.98156 12 5.34156C13.01 3.98156 14.63 3.10156 16.44 3.10156C19.51 3.10156 22 5.60156 22 8.69156C22 15.6916 15.52 19.8216 12.62 20.8116Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <span class="md:block hidden text-sm text-[#344054]">Wishlist</span>
+                <span class="md:block hidden text-sm text-white">Wishlist</span>
               </button>
               <button class="flex flex-col items-center gap-1">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001"
-                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
                   <path
                     d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
                   <path
                     d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
-                  <path d="M9 8H21" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  <path d="M9 8H21" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
 
-                <span class="md:block hidden text-sm text-[#344054]">Cart</span>
+                <span class="md:block hidden text-sm text-white">Cart</span>
               </button>
              <div class=" profile-dropdown">
-              <button class="hidden md:flex flex-col items-center gap-1 dropdown-toggle" >
+              <button class="flex flex-col items-center gap-1 dropdown-toggle" >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.1187 12.7766C12.0487 12.7666 11.9587 12.7666 11.8787 12.7766C10.1187 12.7166 8.71875 11.2766 8.71875 9.50656C8.71875 7.69656 10.1787 6.22656 11.9987 6.22656C13.8087 6.22656 15.2787 7.69656 15.2787 9.50656C15.2687 11.2766 13.8787 12.7166 12.1187 12.7766Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   <path
                     d="M18.7417 19.3825C16.9617 21.0125 14.6017 22.0025 12.0017 22.0025C9.40172 22.0025 7.04172 21.0125 5.26172 19.3825C5.36172 18.4425 5.96172 17.5225 7.03172 16.8025C9.77172 14.9825 14.2517 14.9825 16.9717 16.8025C18.0417 17.5225 18.6417 18.4425 18.7417 19.3825Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   <path
                     d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <span class="md:block hidden text-sm text-[#344054]">Profile</span>
+                <span class="md:block hidden text-sm text-white">Profile</span>
               </button>
-               <div class="profile-dropdown-menu w-[500px] left-auto right-[-180px] top-20 hidden">
+               <div class="profile-dropdown-menu w-[500px] left-auto right-[-180px] top-0 md:top-20 hidden">
                  <div class="flex justify-between gap-4 mb-2.5">
                   <h3 class="lg:text-[30px] text-xl text-secondary-black font-sf_pro_display_medium ">Profile</h3>
                     <button class="close-profile-menu flex-shrink-0 text-black text-2xl leading-none border border-[#ECECEC] w-[36px] h-[36px] rounded-lg flex justify-center items-center">
@@ -145,7 +112,7 @@
 
                     </button>
                   </div> 
-                  <div class="flex flex-col gap-6">
+                  <div class="flex flex-col gap-6 md:h-auto h-[100vh] overflow-y-auto ">
                     <div class="flex flex-col gap-3">
                       <h4 class="text-base lg:text-xl text-secondary-black font-semibold tracking-wider ">Account</h4>
                       <ul class="flex flex-col gap-2.5">
@@ -320,13 +287,7 @@ Rate our App
               </div>
             </div>
           </div>
-          <button id="toggle-button" class=" relative z-10  w-8 h-8 block lg:hidden">
-            <div class="flex flex-col gap-[5px]">
-              <span class="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-              <span class="w-[10px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-              <span class="w-[20px] h-[2px] bg-[#020B1E] dark:bg-white nav-line"></span>
-            </div>
-          </button>
+         
         </div>
       </div>
     </nav>
@@ -342,13 +303,16 @@ Rate our App
             Your Ultimate Travel Companion for
             Unforgettable Adventures
         </h1>
-        <p class="text-base leading-[19px] sm:text-[32px] sm:leading-[38px] font-semibold text-white/90 mb-4">
+        <p class="text-base leading-[19px] sm:text-xl md:text-[32px] sm:leading-[38px] font-sf_pro_display_medium text-white/90 mb-4">
             Discover, Book & Experience the Best Adventures Worldwide
         </p>
         <div class="relative w-full max-w-[850px] ">
             <input type="search" name="search" id="searchInput"
-                class="p-[18px] sm:p-[22px] w-full lg:pl-[58px] pl-[58px] rounded-2xl opacity-80 bg-[linear-gradient(84deg,_#FCFCFD_36.52%,_rgba(252,252,253,0.83)_98.8%)] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05)] backdrop-blur-[6px] text-lg leading-5 tracking-[0.18px] text-gray-900"
-                placeholder="Search by destinations & experiences">
+                class="p-[18px] sm:p-[22px] w-full lg:pl-[58px] pl-[58px] rounded-2xl opacity-80 bg-[linear-gradient(84deg,_#FCFCFD_36.52%,_rgba(252,252,253,0.83)_98.8%)] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05)] backdrop-blur-[6px] text-lg leading-5 tracking-[0.18px] text-gray-900 md:block hidden"
+                placeholder="Search by destinations & experiences" >
+                 <input type="search" name="search" id="searchInput"
+                class="p-[18px] sm:p-[22px] w-full lg:pl-[58px] pl-[58px] rounded-2xl opacity-80 bg-[linear-gradient(84deg,_#FCFCFD_36.52%,_rgba(252,252,253,0.83)_98.8%)] shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05)] backdrop-blur-[6px] text-lg leading-5 tracking-[0.18px] text-gray-900 md:hidden block"
+                placeholder="Search by destinations & experiences" data-modal-target="search-modal">
             <svg class="absolute top-4 left-4" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
                 viewBox="0 0 28 28" fill="none">
                 <path
@@ -357,7 +321,7 @@ Rate our App
                 <path d="M25.6654 25.6615L23.332 23.3281" stroke="#111827" stroke-width="2.1" stroke-linecap="round"
                     stroke-linejoin="round" />
             </svg>
-           <div class="results z-30 absolute bottom-0 mt-3.5 top-full w-[600px] bg-white p-6 rounded-xl h-[470px] hidden">
+           <div class="results z-30 absolute bottom-0 mt-3.5 top-full max-w-max md:min-w-full min-w-[350px] md:w-[600px] bg-white p-6 rounded-xl h-[470px]  hidden">
             <h4 class="text-base font-sf_pro_display_medium text-[#667085] mb-4">Suggestions</h4>
             <ul class="flex flex-col gap-5" >
 			 <li>
@@ -435,12 +399,13 @@ Rate our App
 		 </ul>
          </div>
         </div>
+      
     </div>
-</div>
+      </div>
       <!-- hero section end  -->
       <!-- feature section start  -->
       <div
-        class="relative w-full py-20 before:contents-[''] before:w-[158px] before:h-[158px] before:rounded-full before:bg-[#FF927D] before:blur-[123px] before:absolute before:top-14 before:-right-20
+        class="relative w-full py-10 md:py-20 before:contents-[''] before:w-[158px] before:h-[158px] before:rounded-full before:bg-[#FF927D] before:blur-[123px] before:absolute before:top-14 before:-right-20
       after:contents-[''] after:w-[158px] after:h-[158px] after:rounded-full after:bg-[#FF927D] after:blur-[123px] after:absolute after:top-20 after:-left-32">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
           <!-- feature card slider  -->
@@ -654,7 +619,7 @@ Rate our App
           </div>
           <!-- tour plan slider -->
           <div class="">
-            <h2 class="text-[32px] font-medium font-sf_pro_display_medium text-gray-900 leading-[23px] mb-6">Continue
+            <h2 class="text-xl md:text-[32px] font-medium font-sf_pro_display_medium text-gray-900 leading-[23px] mb-6">Continue
               Your Tour Plan</h2>
             <div class="swiper mob-more-exp !overflow-visible ">
               <div class="swiper-wrapper">
@@ -712,14 +677,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+                 <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
                 <!-- card-2  -->
                 <div class="rounded-2xl swiper-slide relative group">
@@ -776,14 +749,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+                <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
                 <!-- card-3  -->
                 <div class="rounded-2xl swiper-slide relative group">
@@ -840,14 +821,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+                  <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
                 <!-- card-4  -->
                 <div class="rounded-2xl swiper-slide relative group">
@@ -904,14 +893,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+                <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
                 <!-- card-5  -->
                 <div class="rounded-2xl swiper-slide relative group">
@@ -968,14 +965,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+                  <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
                 <!-- card-6  -->
                 <div class="rounded-2xl swiper-slide relative group">
@@ -1032,14 +1037,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+                 <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
                 <!-- card-7  -->
                 <div class="rounded-2xl swiper-slide relative group">
@@ -1096,14 +1109,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+               <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
                 <!-- card-8  -->
                 <div class="rounded-2xl swiper-slide relative group">
@@ -1160,14 +1181,22 @@ Rate our App
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="absolute z-[100] rounded-[9px] top-4 right-4 w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z"
-                        fill="currentcolor" />
-                    </svg>
-                  </button>
+                 <div class="absolute z-[100] top-4 right-4 flex items-center gap-4">
+                            <button class="rounded-[9px]  w-[34px] aspect-square md:hidden flex items-center justify-center text-white bg-white/40  transition-all duration-500">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6125 19.9281C15.434 19.9281 16.1 19.2621 16.1 18.4406C16.1 17.6191 15.434 16.9531 14.6125 16.9531C13.791 16.9531 13.125 17.6191 13.125 18.4406C13.125 19.2621 13.791 19.9281 14.6125 19.9281Z" fill="white"></path>
+                <path d="M7.81172 19.9281C8.63324 19.9281 9.29922 19.2621 9.29922 18.4406C9.29922 17.6191 8.63324 16.9531 7.81172 16.9531C6.9902 16.9531 6.32422 17.6191 6.32422 18.4406C6.32422 19.2621 6.9902 19.9281 7.81172 19.9281Z" fill="white"></path>
+                <path d="M4.91478 4.14587L4.74478 6.22837C4.71078 6.62787 5.02528 6.95937 5.42478 6.95937H18.4383C18.7953 6.95937 19.0928 6.68737 19.1183 6.33038C19.2288 4.82588 18.0813 3.60187 16.5768 3.60187H6.13028C6.04528 3.22787 5.87528 2.87087 5.61178 2.57337C5.18678 2.12287 4.59178 1.85938 3.97978 1.85938H2.50078C2.15228 1.85938 1.86328 2.14837 1.86328 2.49687C1.86328 2.84537 2.15228 3.13437 2.50078 3.13437H3.97978C4.24328 3.13437 4.48978 3.24487 4.66828 3.43187C4.84678 3.62737 4.93178 3.88237 4.91478 4.14587Z" fill="white"></path>
+                <path d="M18.2328 8.23438H5.19376C4.83676 8.23438 4.54776 8.50637 4.51376 8.85487L4.20776 12.5524C4.08876 14.0059 5.22776 15.2469 6.68126 15.2469H16.1333C17.4083 15.2469 18.5303 14.2014 18.6238 12.9264L18.9043 8.95688C18.9383 8.56588 18.6323 8.23438 18.2328 8.23438Z" fill="white"></path>
+                </svg>
+
+                            </button>
+                            <button class=" rounded-[9px]  w-[34px] aspect-square flex items-center justify-center text-white bg-white/40 md:opacity-0 transition-all duration-500 group-hover:opacity-100 hover:text-primary-red">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2686 2.92201C14.805 2.92201 15.3405 2.99766 15.8496 3.16851C18.987 4.18851 20.1175 7.63101 19.1731 10.64C18.6376 12.1777 17.7621 13.581 16.6155 14.7277C14.9741 16.3172 13.173 17.7282 11.2341 18.9437L11.0216 19.072L10.8006 18.9352C8.85496 17.7282 7.04361 16.3172 5.38696 14.7192C4.24796 13.5725 3.37161 12.1777 2.82761 10.64C1.86711 7.63101 2.99761 4.18851 6.16896 3.15066C6.41546 3.06566 6.66961 3.00616 6.92461 2.97301H7.02661C7.26546 2.93816 7.50261 2.92201 7.74061 2.92201H7.83411C8.36961 2.93816 8.88811 3.03166 9.39046 3.20251H9.44061C9.47461 3.21866 9.50011 3.23651 9.51711 3.25266C9.70496 3.31301 9.88261 3.38101 10.0526 3.47451L10.3756 3.61901C10.4537 3.66064 10.5413 3.72424 10.617 3.77921C10.6649 3.81404 10.7081 3.8454 10.7411 3.86551C10.755 3.8737 10.7691 3.88192 10.7833 3.89022C10.8562 3.93277 10.9321 3.97708 10.9961 4.02616C11.9405 3.30451 13.0871 2.91351 14.2686 2.92201ZM16.5286 9.04171C16.8771 9.03236 17.1746 8.75271 17.2001 8.39486V8.29371C17.2256 7.10286 16.5039 6.02421 15.4066 5.60771C15.0581 5.48786 14.6756 5.67571 14.5481 6.03271C14.4291 6.38971 14.6161 6.78071 14.9731 6.90736C15.5179 7.11136 15.8826 7.64771 15.8826 8.24186V8.26821C15.8664 8.46286 15.9251 8.65071 16.0441 8.79521C16.1631 8.93971 16.3416 9.02386 16.5286 9.04171Z" fill="currentcolor"></path>
+                            </svg>
+                            </button>
+                            </div>
                 </div>
               </div>
             </div>
@@ -1177,12 +1206,11 @@ Rate our App
       <!-- feature section end  -->
 
       <!-- around globe section start  -->
-      <div class="relative bg-[#6347EA1A] py-16">
+      <div class="relative bg-[#6347EA1A] py-10 md:py-16">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
-          <h2 class="text-[32px] font-medium font-sf_pro_display_medium text-gray-900 leading-[23px] mb-6">Continue
-            Your Tour Plan
+          <h2 class="text-xl md:text-[32px] font-medium font-sf_pro_display_medium text-gray-900 leading-[23px] mb-6">Top Picks Around the Globe
           </h2>
-          <div class="swiper tour-home-globe !overflow-visible  block  mb-20">
+          <div class="swiper tour-home-globe !overflow-visible  block  md:mb-20">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="assets/images/Home-Globe-1.webp" alt="" class="rounded-2xl">
@@ -1228,10 +1256,9 @@ Rate our App
       <!-- around globe section end  -->
 
       <!-- must-do section start  -->
-      <div class="relative py-20">
+      <div class="relative py-10 md:py-20">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
-          <h2 class="text-[32px] font-medium font-sf_pro_display_medium text-gray-900 leading-[23px] mb-6">Continue
-            Your Tour Plan
+          <h2 class="text-xl md:text-[32px] font-medium font-sf_pro_display_medium text-gray-900 leading-[23px] mb-6">Must-Do Experiences Around the World
           </h2>
           <div class="swiper mob-more-exp !overflow-visible ">
             <div class="swiper-wrapper">
@@ -1556,8 +1583,8 @@ Rate our App
       <!-- review section start  -->
       <div class="relative pb-8">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
-          <div class="flex item-center justify-between mb-8">
-            <h2 class="text-[36px] font-semibold tracking-wider text-gray-900 leading-[43px] w-full max-w-[710px]">
+          <div class="flex item-center md:flex-row flex-col md:gap-0 gap-6 justify-between mb-8">
+            <h2 class="text-xl md:text-[36px] font-semibold tracking-wider text-gray-900 leading-6 md:leading-[43px] w-full max-w-[710px]">
               What Our <span class="text-orange">Travelers</span> Are Saying Unforgettable <span
                 class="text-orange">Journeys</span>, Real <span class="text-orange">Experiences</span>
             </h2>
@@ -2984,16 +3011,16 @@ Rate our App
       <!-- review section end -->
 
       <!-- intigration section start -->
-      <div class="pt-20 ">
+      <div class="md:pt-20 pt-10 ">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-center items-center flex-col lg:justify-between lg:flex-row gap-8">
+          <div class="flex justify-center items-center flex-col lg:justify-between lg:flex-row md:gap-8">
             <div class="w-full lg:w-1/4 ">
-              <h2 class="text-4xl font-bold text-gray-900 leading-[3.25rem] text-center lg:text-left">Trusted by
+              <h2 class="text-xl md:text-4xl font-bold text-gray-900 leading-[3.25rem] text-center lg:text-left">Trusted by
                 our customers & partners</h2>
             </div>
             <div class="w-full lg:w-3/4 lg:border-l border-solid border-gray-300">
               <div
-                class="py-12 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 border-b border-solid border-gray-300 gap-8">
+                class="py-6 md:py-12 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 border-b border-solid border-gray-300 gap-8">
                 <a href="#" class="flex items-center justify-center">
                   <svg class="h-9" viewBox="0 0 103 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_8562_69374)">
@@ -3107,7 +3134,7 @@ Rate our App
                 </a>
               </div>
               <div
-                class="py-12 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 border-b border-solid border-gray-300 gap-8">
+                class="py-6 md:py-12 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 border-b border-solid border-gray-300 gap-8">
                 <a href="#" class="flex items-center justify-center">
                   <svg class="h-9" viewBox="0 0 106 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -3221,7 +3248,7 @@ Rate our App
 
                 </a>
               </div>
-              <div class="py-12 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 gap-8">
+              <div class="py-6 md:py-12 grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 gap-8">
                 <a href="#" class="flex items-center justify-center">
                   <svg class="h-9" viewBox="0 0 106 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -3323,9 +3350,9 @@ Rate our App
       <!-- intigration section end -->
 
       <!-- support section start  -->
-      <div class="w-full py-16 bg-[#FF52310D]">
+      <div class="w-full py-10 md:py-16 bg-[#FF52310D]">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
-          <h2 class="text-[36px] leading-[43px] font-semibold tracking-wider text-gray-900 w-full max-w-[720px] mb-14">
+          <h2 class="text-xl md:text-[36px] leading-6 md:leading-[43px] font-semibold tracking-wider text-gray-900 w-full max-w-[720px] mb-14">
             We've welcomed over 3 million guests — and we're just getting started.
           </h2>
           <!-- slider start  -->
@@ -3597,7 +3624,7 @@ Rate our App
       <!-- support section end  -->
 
       <!-- tab saction start  -->
-      <div class="w-full relative py-20">
+      <div class="w-full relative py-10 md:py-20">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8">
           <div class="tabs">
             <div class="block w-full">
@@ -4288,7 +4315,7 @@ Rate our App
       <!-- tab saction end  -->
 
       <!-- Double cta section start  -->
-      <div class="w-full pb-20">
+      <div class="w-full pb-10 md:pb-20">
         <div class="w-full max-w-7xl mx-auto px-4 lg:px-8 relative">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div class="px-6 pt-6 rounded-2xl bg-[#F7E7E4] flex flex-col sm:flex-row max-sm:gap-6 items-center justify-between">
@@ -4931,10 +4958,10 @@ Rate our App
       </div>
     </footer>
   </div>
-  <!--login modal-->
-  <div class="modalTrigger modal-home bg-white  max-h-max rounded-2xl p-4" id="login-modal">
+   <!--search modal mobile-->
+  <div class="modalTrigger modal-home bg-white  max-h-max rounded-2xl p-4 flex-col gap-6" id="search-modal">
     <span
-      class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  absolute top-4 right-4 w-9 h-9 flex items-center justify-center">
+      class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  absolute top-4 left-4 w-9 h-9 flex items-center justify-center">
       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_3692_10400)">
           <path
@@ -4948,157 +4975,116 @@ Rate our App
         </defs>
       </svg>
     </span>
-    <div class="w-full flex flex-col">
+    <p class="text-lg font-medium leading-[21px] mb-2 text-center w-full">Search</p>
+    <div class="block relative w-full" >
+      <input type="text"
+        class=" py-2.5 pr-3.5 pl-12 border border-[#FF5231] shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05)] text-base text-primary-gray bg-transparent rounded-xl w-full"
+        placeholder="What are you looking for?" />
+      <button
+        class="absolute top-1 left-2 p-2 bg-transparent text-primary-black md:text-white flex justify-center items-center rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+            stroke="#667085" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M22 22L20 20" stroke="#667085" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
 
-      <h2 class="text-lg leading-6 font-semibold tracking-wider text-primary-black mb-8 mt-4 text-center">Log in to Continue</h2>
-      <p class="text-base  font-sf_pro_display_medium text-primary-black font-normal mb-4">Check out easily and access
-        tickets on any device with your <span class="text-orange">VACAYOUT</span> account.</p>
-      <form action="#" class="w-full">
-        <div class="relative mb-4">
-          <label class="flex  items-center mb-1.5 text-white text-sm leading-[22px] font-medium">Email
-
-          </label>
-          <input type="text" id="default-search"
-            class="block w-full px-4 py-2 text-sm leading-[26px] font-normal shadow-xs text-white bg-[#0C0C0C] border border-transparent rounded-lg placeholder-[#4D4D4D] outline-none hover:border-white/20 focus:border-[#F99D1A] transition-all duration-200"
-            placeholder="Enter your email address" required="">
-        </div>
-
-        <div class="flex items-center justify-end w-full mb-[16px]">
-          <a href="#" data-modal-target="forgot-psw"
-            class="text-sm leading-[18px] font-medium text-[#F99D1A] transition-all duration-500 hover:text-[#bc730a] text-right">Forgot
-            password?</a>
-        </div>
-        <button type="submit"
-          class="py-3 px-5 mb-4 rounded-lg bg-[#F99D1A] text-black text-base leading-5 font-medium text-center w-full transition-all duration-500 hover:bg-[#bc730a]">Sign
-          In</button>
-        <div class="flex items-center gap-5">
-          <div class="w-full h-px bg-gradient-to-r from-black to-[#4D4D4D]"></div>
-          <p class="text-xs leading-[18px] text-[#4D4D4D]">OR</p>
-          <div class="w-full h-px bg-gradient-to-l from-black to-[#4D4D4D]"></div>
-        </div>
-        <button type="button"
-          class="w-full rounded-lg my-4 flex items-center justify-center gap-2.5 py-3 px-5 bg-white text-[#002225] text-base font-medium leading-5">
-          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-            <g clip-path="url(#clip0_13119_9200)">
-              <path
-                d="M20.339 8.14769C20.4279 8.14769 20.5 8.21976 20.5 8.30866V9.99878C20.5 10.6314 20.4412 11.2499 20.3285 11.8499C19.4568 16.5104 15.3509 20.0325 10.4295 19.9985C4.90725 19.9605 0.487799 15.4985 0.500025 9.97624C0.512174 4.46386 4.98475 -0.0012207 10.5 -0.0012207C13.2021 -0.0012207 15.6537 1.07073 17.4537 2.81198C17.5187 2.87483 17.5203 2.97843 17.4564 3.04233L15.0653 5.43339C15.0038 5.49495 14.9043 5.49655 14.8412 5.43651C13.7115 4.36116 12.183 3.70097 10.5 3.70097C7.02456 3.70097 4.22592 6.47972 4.20233 9.95507C4.17862 13.4532 7.00737 16.2966 10.5 16.2966C13.3338 16.2966 15.7306 14.4245 16.5209 11.8499H10.661C10.5721 11.8499 10.5 11.7778 10.5 11.6889V8.30862C10.5 8.21972 10.5721 8.14765 10.661 8.14765H20.339V8.14769Z"
-                fill="#2196F3" />
-              <path
-                d="M4.77922 7.36136L1.74219 5.16698C3.44602 2.0853 6.7293 -0.0012207 10.4995 -0.0012207C13.2016 -0.0012207 15.6532 1.07073 17.4532 2.81198C17.5182 2.87483 17.5199 2.97843 17.4559 3.04233L15.0649 5.43339C15.0034 5.49483 14.904 5.49675 14.8411 5.43683C13.7113 4.36128 12.1827 3.70101 10.4995 3.70101C7.96313 3.70101 5.7768 5.20038 4.77922 7.36136Z"
-                fill="#F44336" />
-              <path
-                d="M17.8364 16.7948C16.0102 18.7654 13.3994 19.9988 10.5008 19.9988C6.5857 19.9988 3.19617 17.7489 1.55469 14.4712L4.65527 12.3464C5.5857 14.6616 7.8525 16.2966 10.5008 16.2966C12.1627 16.2966 13.6742 15.6527 14.7994 14.6008L17.8364 16.7948Z"
-                fill="#4CAF50" />
-              <path
-                d="M4.20223 9.99879C4.20223 10.8286 4.36277 11.6209 4.65453 12.3465L1.55391 14.4712C0.879492 13.1255 0.5 11.6064 0.5 9.99879C0.5 8.24629 0.950703 6.59918 1.74266 5.16699L4.77969 7.36137C4.40906 8.16336 4.20223 9.05715 4.20223 9.99879Z"
-                fill="#FFC107" />
-            </g>
-            <defs>
-              <clipPath id="clip0_13119_9200">
-                <rect width="20" height="20" fill="white" transform="translate(0.5 -0.0012207)" />
-              </clipPath>
-            </defs>
-          </svg>
-          Sign In With Google
-        </button>
-        <p class="text-sm font-normal text-white text-center">Don't have an account? <span
-            class="text-[#F99D1A] cursor-pointer font-medium  " data-modal-target="Sign_up">Register</span></p>
-      </form>
+      </button>
     </div>
-  </div>
-  <!--login modal mobile-->
-  <div class="modalTrigger modal-home bg-white  max-h-max rounded-2xl p-4" id="search-modal">
-    <span
-      class="close-btn cursor-pointer p-1.5 rounded-xl border border-[#D0D5DD]  text-white transition-all duration-300  absolute top-4 right-4 w-9 h-9 flex items-center justify-center">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g clip-path="url(#clip0_3692_10400)">
-          <path
-            d="M2.10901 1.01287L5.997 4.90088L9.869 1.02887C9.93686 0.956649 10.0186 0.898871 10.1093 0.859005C10.2001 0.819139 10.2979 0.798006 10.397 0.796875C10.6092 0.796875 10.8127 0.88116 10.9627 1.03119C11.1127 1.18122 11.197 1.3847 11.197 1.59688C11.1989 1.69496 11.1807 1.79238 11.1435 1.88318C11.1064 1.97398 11.0511 2.05622 10.981 2.12488L7.069 5.99688L10.981 9.90888C11.1129 10.0379 11.1902 10.2125 11.197 10.3969C11.197 10.609 11.1127 10.8125 10.9627 10.9626C10.8127 11.1126 10.6092 11.1969 10.397 11.1969C10.295 11.2011 10.1933 11.1841 10.0983 11.1469C10.0033 11.1097 9.91701 11.0532 9.845 10.9809L5.997 7.09288L2.11701 10.9729C2.04941 11.0427 1.96866 11.0984 1.87941 11.1369C1.79016 11.1753 1.69418 11.1957 1.59701 11.1969C1.38483 11.1969 1.18135 11.1126 1.03132 10.9626C0.881291 10.8125 0.797005 10.609 0.797005 10.3969C0.79514 10.2988 0.813338 10.2014 0.850481 10.1106C0.887625 10.0198 0.942931 9.93753 1.01301 9.86888L4.925 5.99688L1.01301 2.08487C0.881153 1.95588 0.803837 1.7812 0.797005 1.59688C0.797005 1.3847 0.881291 1.18122 1.03132 1.03119C1.18135 0.88116 1.38483 0.796875 1.59701 0.796875C1.78901 0.799275 1.97301 0.876875 2.10901 1.01287Z"
-            fill="black" />
-        </g>
-        <defs>
-          <clipPath id="clip0_3692_10400">
-            <rect width="12" height="12" fill="white" />
-          </clipPath>
-        </defs>
-      </svg>
-    </span>
     <div class="w-full flex flex-col">
-        <h4 class="text-base font-sf_pro_display_medium text-[#667085] mb-4">Suggestions</h4>
-        <ul class="flex flex-col gap-5">
-			 <li>
-                <a href="#" class="flex items-center gap-2.5">
-                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
-                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
-                    </svg>
-                    <div class="block">
-                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
-                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
-                    </div>  
-                </a>
-             </li>
-			 <li>
-                <a href="#" class="flex items-center gap-2.5">
-                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
-                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
-                    </svg>
-                    <div class="block">
-                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
-                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
-                    </div>  
-                </a>
-             </li>
-             <li>
-                <a href="#" class="flex items-center gap-2.5">
-                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
-                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
-                    </svg>
-                    <div class="block">
-                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
-                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
-                    </div>  
-                </a>
-             </li>
-			 <li>
-                <a href="#" class="flex items-center gap-2.5">
-                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
-                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
-                    </svg>
-                    <div class="block">
-                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
-                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
-                    </div>  
-                </a>
-             </li>
-              <li>
-                <a href="#" class="flex items-center gap-2.5">
-                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
-                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
-                    </svg>
-                    <div class="block">
-                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>alsk</h5>
-                        <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
-                    </div>  
-                </a>
-             </li>
-			 <li>
-                <a href="#" class="flex items-center gap-2.5">
-                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z" fill="#FF5231"></path>
-                    <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
-                    </svg>
-                    <div class="block">
-                        <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span class="text-[#0F182E]">S</span>an Francisco</h5>
-                        <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
-                    </div>  
-                </a>
-             </li>
-		 </ul>
+      <h4 class="text-base font-sf_pro_display_medium text-[#667085] mb-4">Suggestions</h4>
+      <ul class="flex flex-col gap-5">
+        <li>
+          <a href="#" class="flex items-center gap-2.5">
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z"
+                fill="#FF5231"></path>
+              <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+            </svg>
+            <div class="block">
+              <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span
+                  class="text-[#0F182E]">S</span>alsk</h5>
+              <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-2.5">
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z"
+                fill="#FF5231"></path>
+              <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+            </svg>
+            <div class="block">
+              <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span
+                  class="text-[#0F182E]">S</span>an Francisco</h5>
+              <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-2.5">
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z"
+                fill="#FF5231"></path>
+              <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+            </svg>
+            <div class="block">
+              <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span
+                  class="text-[#0F182E]">S</span>alsk</h5>
+              <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-2.5">
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z"
+                fill="#FF5231"></path>
+              <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+            </svg>
+            <div class="block">
+              <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span
+                  class="text-[#0F182E]">S</span>an Francisco</h5>
+              <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-2.5">
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z"
+                fill="#FF5231"></path>
+              <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+            </svg>
+            <div class="block">
+              <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span
+                  class="text-[#0F182E]">S</span>alsk</h5>
+              <span class="text-base text-[#ADB3B8]  tracking-wider">Russia</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-2.5">
+            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.00148 2.44471C10.0505 1.38679 12.569 1.40528 14.5988 2.49314C16.6086 3.60316 17.8301 5.58421 17.8188 7.71527C17.772 9.83234 16.4622 11.8224 14.8249 13.3608C13.8799 14.2527 12.8228 15.0414 11.6751 15.7108C11.5569 15.7715 11.4274 15.8122 11.2931 15.8307C11.1638 15.8258 11.0378 15.7919 10.9267 15.7319C9.1745 14.7262 7.63733 13.4424 6.38909 11.9424C5.3446 10.6902 4.7512 9.1774 4.68945 7.60941C4.6881 5.47427 5.95248 3.50262 8.00148 2.44471ZM9.18551 8.49305C9.53018 9.24809 10.3437 9.7406 11.2463 9.7406C11.8376 9.74438 12.406 9.53392 12.8249 9.15613C13.2437 8.77833 13.4782 8.26459 13.4761 7.72938C13.4793 6.91243 12.938 6.17432 12.105 5.85971C11.2721 5.54509 10.3117 5.71602 9.67238 6.29269C9.03305 6.86935 8.84084 7.738 9.18551 8.49305Z"
+                fill="#FF5231"></path>
+              <ellipse opacity="0.4" cx="11.2535" cy="17.4974" rx="4.68909" ry="0.833334" fill="#FF5231"></ellipse>
+            </svg>
+            <div class="block">
+              <h5 class="text-lg text-[#768089] font-semibold tracking-wider leading-5"><span
+                  class="text-[#0F182E]">S</span>an Francisco</h5>
+              <span class="text-base text-[#ADB3B8]  tracking-wider">United States of America</span>
+            </div>
+          </a>
+        </li>
+      </ul>
 
     </div>
   </div>
