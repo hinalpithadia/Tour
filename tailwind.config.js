@@ -8,6 +8,7 @@ module.exports = {
         manrope: ['manrope', 'sans-serif'],
         sf_pro_display: ['SF Pro Display ', 'sans-serif'],
         sf_pro_display_medium: ['SF Pro Display Medium', 'sans-serif'],
+        sf_pro_display_semibold: ['SF Pro Display Semibold', 'sans-serif'],
       },
       colors : {
         'primary-black' : '#0F1E2A',

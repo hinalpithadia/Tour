@@ -16,77 +16,114 @@
 <body class=" font-sf_pro_display font-normal">
   <div class="bg-lightgray ">
     <!-- navbar start  -->
-   <nav
+    <nav
       class="fixed z-30 w-full  border-b border-[#D0D5DD]  flex justify-between py-2.5 bg-white/50 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.05);] backdrop-blur-[6px]  items-center transition-all duration-200">
       <div class=" w-full mx-auto  px-3 container">
         <div class="flex md:justify-start justify-between items-center">
-          
+
           <a href="index.html"
             class="dark:text-white text-black relative z-10  inline-block  lg:mr-8 leading-normal whitespace-nowrap ">
             <img src="assets/images/logo.png" alt="logo">
           </a>
 
-        
+
           <div class="flex items-center gap-20">
             <div class="hidden md:block relative md:w-[400px]">
-              <input type="text" class="md:block hidden py-2.5 pl-3.5 pr-10 border border-[#D0D5DD] shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05)] text-base text-primary-gray bg-transparent rounded-[30px] w-full" placeholder="What are you looking for?" />
-              <button class="md:absolute top-1.5 right-3 p-2 bg-transparent text-primary-black md:text-white md:bg-orange flex justify-center items-center rounded-full">
+              <input type="text"
+                class="md:block hidden py-2.5 pl-3.5 pr-10 border border-[#D0D5DD] shadow-[0px 1px 2px 0px rgba(16, 24, 40, 0.05)] text-base text-primary-gray bg-transparent rounded-[30px] w-full"
+                placeholder="What are you looking for?" />
+              <button
+                class="md:absolute top-1.5 right-3 p-2 bg-transparent text-primary-black md:text-white md:bg-orange flex justify-center items-center rounded-full">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 14L11.6667 11.6667M13.3333 7.66667C13.3333 10.7963 10.7963 13.3333 7.66667 13.3333C4.53705 13.3333 2 10.7963 2 7.66667C2 4.53705 4.53705 2 7.66667 2C10.7963 2 13.3333 4.53705 13.3333 7.66667Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>   
-</svg>
+                  <path
+                    d="M14 14L11.6667 11.6667M13.3333 7.66667C13.3333 10.7963 10.7963 13.3333 7.66667 13.3333C4.53705 13.3333 2 10.7963 2 7.66667C2 4.53705 4.53705 2 7.66667 2C10.7963 2 13.3333 4.53705 13.3333 7.66667Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
 
               </button>
             </div>
-            
+
           </div>
           <div class="md:ml-auto flex items-center md:gap-6 gap-2">
-           
-            <button class="hidden xl:flex py-2.5 px-3.5 border border-[#D0D5DD] rounded-md transition-all duration-500  items-center gap-1.5 text-sm text-orange font-sf_pro_display_medium hover:bg-[#ffefec]">
+
+            <button
+              class="hidden xl:flex py-2.5 px-3.5 border border-[#D0D5DD] rounded-md transition-all duration-500  items-center gap-1.5 text-sm text-orange font-sf_pro_display_medium hover:bg-[#ffefec]">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.9609 6.17188C18.9609 7.56187 20.3409 9.77187 20.6209 12.3219" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M3.48828 12.3688C3.74828 9.82875 5.10828 7.61875 7.08828 6.21875" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8.19141 20.9375C9.35141 21.5275 10.6714 21.8575 12.0614 21.8575C13.4014 21.8575 14.6614 21.5575 15.7914 21.0075" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12.0613 7.70062C13.5966 7.70062 14.8413 6.45598 14.8413 4.92062C14.8413 3.38527 13.5966 2.14062 12.0613 2.14062C10.5259 2.14062 9.28125 3.38527 9.28125 4.92062C9.28125 6.45598 10.5259 7.70062 12.0613 7.70062Z" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4.83078 19.9194C6.36613 19.9194 7.61078 18.6747 7.61078 17.1394C7.61078 15.604 6.36613 14.3594 4.83078 14.3594C3.29543 14.3594 2.05078 15.604 2.05078 17.1394C2.05078 18.6747 3.29543 19.9194 4.83078 19.9194Z" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M19.1706 19.9194C20.706 19.9194 21.9506 18.6747 21.9506 17.1394C21.9506 15.604 20.706 14.3594 19.1706 14.3594C17.6353 14.3594 16.3906 15.604 16.3906 17.1394C16.3906 18.6747 17.6353 19.9194 19.1706 19.9194Z" stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.9609 6.17188C18.9609 7.56187 20.3409 9.77187 20.6209 12.3219" stroke="#FF5231"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M3.48828 12.3688C3.74828 9.82875 5.10828 7.61875 7.08828 6.21875" stroke="#FF5231"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M8.19141 20.9375C9.35141 21.5275 10.6714 21.8575 12.0614 21.8575C13.4014 21.8575 14.6614 21.5575 15.7914 21.0075"
+                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12.0613 7.70062C13.5966 7.70062 14.8413 6.45598 14.8413 4.92062C14.8413 3.38527 13.5966 2.14062 12.0613 2.14062C10.5259 2.14062 9.28125 3.38527 9.28125 4.92062C9.28125 6.45598 10.5259 7.70062 12.0613 7.70062Z"
+                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M4.83078 19.9194C6.36613 19.9194 7.61078 18.6747 7.61078 17.1394C7.61078 15.604 6.36613 14.3594 4.83078 14.3594C3.29543 14.3594 2.05078 15.604 2.05078 17.1394C2.05078 18.6747 3.29543 19.9194 4.83078 19.9194Z"
+                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M19.1706 19.9194C20.706 19.9194 21.9506 18.6747 21.9506 17.1394C21.9506 15.604 20.706 14.3594 19.1706 14.3594C17.6353 14.3594 16.3906 15.604 16.3906 17.1394C16.3906 18.6747 17.6353 19.9194 19.1706 19.9194Z"
+                  stroke="#FF5231" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
               Join Our Supplier Network
             </button>
             <div class="flex items-center md:gap-6 gap-3">
-               <button class="md:hidden block">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#292D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22 22L20 20" stroke="#292D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-            </button>
+              <button class="md:hidden block">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                    stroke="#292D32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M22 22L20 20" stroke="#292D32" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
               <button class="flex flex-col items-center gap-1">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.62 20.8116C12.28 20.9316 11.72 20.9316 11.38 20.8116C8.48 19.8216 2 15.6916 2 8.69156C2 5.60156 4.49 3.10156 7.56 3.10156C9.38 3.10156 10.99 3.98156 12 5.34156C13.01 3.98156 14.63 3.10156 16.44 3.10156C19.51 3.10156 22 5.60156 22 8.69156C22 15.6916 15.52 19.8216 12.62 20.8116Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path
+                    d="M12.62 20.8116C12.28 20.9316 11.72 20.9316 11.38 20.8116C8.48 19.8216 2 15.6916 2 8.69156C2 5.60156 4.49 3.10156 7.56 3.10156C9.38 3.10156 10.99 3.98156 12 5.34156C13.01 3.98156 14.63 3.10156 16.44 3.10156C19.51 3.10156 22 5.60156 22 8.69156C22 15.6916 15.52 19.8216 12.62 20.8116Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span class="md:block hidden text-sm text-[#344054]">Wishlist</span>
               </button>
               <button class="flex flex-col items-center gap-1">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9 8H21" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                  <path
+                    d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001"
+                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M9 8H21" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
 
                 <span class="md:block hidden text-sm text-[#344054]">Cart</span>
               </button>
               <button class="flex flex-col items-center gap-1" data-modal-target="login-modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.1187 12.7766C12.0487 12.7666 11.9587 12.7666 11.8787 12.7766C10.1187 12.7166 8.71875 11.2766 8.71875 9.50656C8.71875 7.69656 10.1787 6.22656 11.9987 6.22656C13.8087 6.22656 15.2787 7.69656 15.2787 9.50656C15.2687 11.2766 13.8787 12.7166 12.1187 12.7766Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.7417 19.3825C16.9617 21.0125 14.6017 22.0025 12.0017 22.0025C9.40172 22.0025 7.04172 21.0125 5.26172 19.3825C5.36172 18.4425 5.96172 17.5225 7.03172 16.8025C9.77172 14.9825 14.2517 14.9825 16.9717 16.8025C18.0417 17.5225 18.6417 18.4425 18.7417 19.3825Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                  <path
+                    d="M12.1187 12.7766C12.0487 12.7666 11.9587 12.7666 11.8787 12.7766C10.1187 12.7166 8.71875 11.2766 8.71875 9.50656C8.71875 7.69656 10.1787 6.22656 11.9987 6.22656C13.8087 6.22656 15.2787 7.69656 15.2787 9.50656C15.2687 11.2766 13.8787 12.7166 12.1187 12.7766Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M18.7417 19.3825C16.9617 21.0125 14.6017 22.0025 12.0017 22.0025C9.40172 22.0025 7.04172 21.0125 5.26172 19.3825C5.36172 18.4425 5.96172 17.5225 7.03172 16.8025C9.77172 14.9825 14.2517 14.9825 16.9717 16.8025C18.0417 17.5225 18.6417 18.4425 18.7417 19.3825Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
 
                 <span class="md:block hidden text-sm text-[#344054]">Profile</span>
               </button>
             </div>
           </div>
-         
+
         </div>
       </div>
     </nav>
@@ -159,11 +196,11 @@
               </div>
             </li>
           </ol>
-          <h1 class="hidden sm:block font-sf_pro_display_medium font-medium text-[30px] text-[#0F1E2A] mb-8">
+          <h1 class="hidden sm:block font-sf_pro_display_medium font-medium text-[30px] text-[#0F1E2A] mb-[30px]">
             Checkout
           </h1>
           <!-- payment step display  -->
-          <div class="w-full max-w-[800px] rounded-2xl py-5 px-6 flex items-center gap-2 bg-white mb-8">
+          <div class="w-full max-w-[800px] rounded-2xl py-5 px-6 flex items-center gap-2 bg-white mb-[30px]">
             <div class="flex items-center gap-2">
               <span
                 class="w-[34px] aspect-square rounded-full flex items-center justify-center bg-orange text-base font-medium font-sf_pro_display_medium leading-[18px] text-white">1</span>
@@ -180,76 +217,90 @@
           </div>
           <div class="grid grid-cols-12 gap-[30px] ">
             <div class="col-span-12 lg:col-span-8">
-              <div class="flex flex-col gap-8">
-                <form action="#" class="flex flex-col gap-4 p-6 rounded-2xl bg-white">
-                  <h2
-                    class="text-xl leading-6 font-medium font-sf_pro_display_medium text-gray-900 flex items-center gap-4">
-                    <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="7.96413" cy="8" rx="7.96413" ry="8" fill="#F9A000" />
-                      <ellipse cx="16.0354" cy="8" rx="7.96413" ry="8" fill="#ED0006" />
-                    </svg>
-                    Credit/Debit Card
-                  </h2>
-                  <div class="grid grid-cols-2 gap-3">
-                    <div class="relative pt-2.5 col-span-2">
-                      <label for="Cardname" class="checklabel">NAME on card*</label>
-                      <input type="text" id="Cardname" name="Cardname" class="input-field"
-                        placeholder="Card Holder Name" required>
-                    </div>
-                    <div class="relative pt-2.5 col-span-2">
-                      <label for="cardnumber*" class="checklabel">card number*</label>
-                      <input type="text" id="cardnumber" name="cardnumber" class="input-field"
-                        placeholder="Enter your Email" required>
-                    </div>
-                    <div class="relative pt-2.5">
-                      <label for="expirydate*" class="checklabel">expiry date</label>
-                      <!-- <input type="text" id="expirydate" name="expirydate"
-                        class="basicDate w-full input-field focus:outline-none" placeholder="Select Date" data-input>
-                         -->
-                        <input type="text" id="expirydate" name="expirydate" class="datemobile input-field focus:outline-none" placeholder="Select Date" data-input="" readonly="readonly">
-                    </div>
-                    <div class="relative pt-2.5">
-                      <label for="cvv" class="checklabel">cvv</label>
-                      <input type="text" id="cvv" name="cvv" class="input-field" placeholder="cvv" required>
-                    </div>
-                  </div>
-                  <div class="block">
-                    <div class="flex items-center  mb-4">
-                      <input id="checkbox-default" type="checkbox" value=""
-                        class="w-5 h-5 appearance-none border cursor-pointer border-gray-300  rounded-md mr-2 hover:border-orange checked:bg-no-repeat checked:bg-center checked:border-orange checked:bg-orange">
-                      <label for="checkbox-default"
-                        class="text-base font-medium font-sf_pro_display_medium cursor-pointer text-[#667085]">
-                        Save your card information
+              <div class="flex flex-col gap-[18px]">
+
+
+                <div class="flex flex-col gap-[18px] radio-outline-orange">
+                  <div  class="flex flex-col gap-4 p-6 rounded-2xl bg-white">
+                    <div class="flex items-center justify-between radio-outline-orange">
+                      <h2
+                        class="text-xl leading-6 font-medium font-sf_pro_display_medium text-gray-900 flex items-center gap-4">
+                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <ellipse cx="7.96413" cy="8" rx="7.96413" ry="8" fill="#F9A000" />
+                          <ellipse cx="16.0354" cy="8" rx="7.96413" ry="8" fill="#ED0006" />
+                        </svg>
+                        Credit/Debit Card
+                      </h2>
+                      <input type="radio" name="radio-right"
+                        class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
+                        id="radio-on-right-1" checked>
+                      <label for="radio-on-right-1"
+                        class="flex flex-row-reverse  items-center w-max bg-white rounded-2xl text-sm ">
+                        <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5 ml-auto"></span>
+
                       </label>
                     </div>
-                    <p class="text-sm leading-4 font-medium font-sf_pro_display_medium text-black">By proceeding, you
-                      agree to VACAYOUT’s general <span class="text-orange underline underline-offset-2">terms and
-                        conditions</span>. Learn more about your right of <span
-                        class="text-orange underline underline-offset-2">withdrawal </span>and relevant <span
-                        class="text-orange underline underline-offset-2">travel</span> laws.</p>
+                    <div class="grid grid-cols-2 gap-3">
+                      <div class="relative pt-2.5 col-span-2">
+                        <label for="Cardname" class="checklabel">NAME on card*</label>
+                        <input type="text" id="Cardname" name="Cardname" class="input-field"
+                          placeholder="Card Holder Name" required>
+                      </div>
+                      <div class="relative pt-2.5 col-span-2">
+                        <label for="cardnumber*" class="checklabel">card number*</label>
+                        <input type="text" id="cardnumber" name="cardnumber" class="input-field"
+                          placeholder="Enter your Email" required>
+                      </div>
+                      <div class="relative pt-2.5">
+                        <label for="expirydate*" class="checklabel">expiry date</label>
+                        <!-- <input type="text" id="expirydate" name="expirydate"
+                        class="basicDate w-full input-field focus:outline-none" placeholder="Select Date" data-input>
+                         -->
+                        <input type="text" id="expirydate" name="expirydate"
+                          class="datemobile input-field focus:outline-none" placeholder="Select Date" data-input=""
+                          readonly="readonly">
+                      </div>
+                      <div class="relative pt-2.5">
+                        <label for="cvv" class="checklabel">cvv</label>
+                        <input type="text" id="cvv" name="cvv" class="input-field" placeholder="cvv" required>
+                      </div>
+                    </div>
+                    <div class="block">
+                      <div class="flex items-center  mb-4">
+                        <input id="checkbox-default" type="checkbox" value=""
+                          class="w-5 h-5 appearance-none border cursor-pointer border-gray-300  rounded-md mr-2 hover:border-orange checked:bg-no-repeat checked:bg-center checked:border-orange checked:bg-orange">
+                        <label for="checkbox-default"
+                          class="text-base font-medium font-sf_pro_display_medium cursor-pointer text-[#667085]">
+                          Save your card information
+                        </label>
+                      </div>
+                      <p class="text-sm leading-4 font-medium font-sf_pro_display_medium text-black">By proceeding, you
+                        agree to VACAYOUT’s general <span class="text-orange underline underline-offset-2">terms and
+                          conditions</span>. Learn more about your right of <span
+                          class="text-orange underline underline-offset-2">withdrawal </span>and relevant <span
+                          class="text-orange underline underline-offset-2">travel</span> laws.</p>
+                    </div>
+                    <button
+                      class="btn-orange w-full max-w-full md:max-w-[50%] py-2.5 flex items-center justify-center gap-2.5 font-sf_pro_display_semibold">
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.2418 1.85781L5.08346 3.42448C4.12513 3.78281 3.3418 4.91615 3.3418 5.93281V12.1245C3.3418 13.1078 3.9918 14.3995 4.78346 14.9911L8.3668 17.6661C9.5418 18.5495 11.4751 18.5495 12.6501 17.6661L16.2335 14.9911C17.0251 14.3995 17.6751 13.1078 17.6751 12.1245V5.93281C17.6751 4.90781 16.8918 3.77448 15.9335 3.41615L11.7751 1.85781C11.0668 1.59948 9.93346 1.59948 9.2418 1.85781Z"
+                          stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M10.5007 10.4193C11.4211 10.4193 12.1673 9.67308 12.1673 8.7526C12.1673 7.83213 11.4211 7.08594 10.5007 7.08594C9.58018 7.08594 8.83398 7.83213 8.83398 8.7526C8.83398 9.67308 9.58018 10.4193 10.5007 10.4193Z"
+                          stroke="white" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M10.5 10.4141V12.9141" stroke="white" stroke-width="1.25" stroke-miterlimit="10"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Make Payment of £90
+                    </button>
                   </div>
-                  <button class="btn-orange w-full max-w-full md:max-w-[50%] py-2.5 flex items-center justify-center gap-2.5">
-                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9.2418 1.85781L5.08346 3.42448C4.12513 3.78281 3.3418 4.91615 3.3418 5.93281V12.1245C3.3418 13.1078 3.9918 14.3995 4.78346 14.9911L8.3668 17.6661C9.5418 18.5495 11.4751 18.5495 12.6501 17.6661L16.2335 14.9911C17.0251 14.3995 17.6751 13.1078 17.6751 12.1245V5.93281C17.6751 4.90781 16.8918 3.77448 15.9335 3.41615L11.7751 1.85781C11.0668 1.59948 9.93346 1.59948 9.2418 1.85781Z"
-                        stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                      <path
-                        d="M10.5007 10.4193C11.4211 10.4193 12.1673 9.67308 12.1673 8.7526C12.1673 7.83213 11.4211 7.08594 10.5007 7.08594C9.58018 7.08594 8.83398 7.83213 8.83398 8.7526C8.83398 9.67308 9.58018 10.4193 10.5007 10.4193Z"
-                        stroke="white" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M10.5 10.4141V12.9141" stroke="white" stroke-width="1.25" stroke-miterlimit="10"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    Make Payment of £90
-                  </button>
-                </form>
-
-                <div class="flex flex-col gap-4">
-                  <div class="block">
+                  <div class="block ">
                     <input type="radio" name="radio-right"
                       class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
-                      id="radio-on-right-1">
-                    <label for="radio-on-right-1"
+                      id="radio-on-right-2">
+                    <label for="radio-on-right-2"
                       class="flex flex-row-reverse py-4 px-3.5 items-center w-full bg-white rounded-2xl text-sm ">
                       <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5 ml-auto"></span>
                       <h5 class="text-xl text-gray-900 font-medium font-sf_pro_display_medium flex items-center gap-5">
@@ -281,8 +332,8 @@
                   <div class="block">
                     <input type="radio" name="radio-right"
                       class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
-                      id="radio-on-right-2">
-                    <label for="radio-on-right-2"
+                      id="radio-on-right-3">
+                    <label for="radio-on-right-3"
                       class="flex flex-row-reverse py-4 px-3.5 items-center w-full bg-white  rounded-2xl text-sm ">
                       <span class="border border-gray-300  rounded-full mr-2 w-4 h-4 mt-0.5 ml-auto"></span>
                       <h5 class="text-xl text-gray-900 font-medium font-sf_pro_display_medium flex items-center gap-5">
@@ -389,7 +440,8 @@
               </div>
             </div>
             <div class="col-span-12 lg:col-span-4 md:order-last order-first">
-              <h4 class="md:hidden block text-lg font-sf_pro_display_medium text-secondary-black mb-5">Order Summary</h4>
+              <h4 class="md:hidden block text-lg font-sf_pro_display_medium text-secondary-black mb-5">Order Summary
+              </h4>
               <div class="flex flex-col gap-3.5 p-3.5 rounded-2xl bg-white">
                 <div class="flex flex-col gap-4">
                   <img src="assets/images/checkout-img.png" alt="" class="w-full h-auto md:block hidden">
@@ -399,46 +451,51 @@
                     </h3>
                     <ul class="flex flex-col gap-2 pb-3.5 border-b border-[#D0D5DD]">
                       <div class="flex items-center justify-between">
-                      <li
-                        class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                          <path d="M6.66699 1.66406V4.16406" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M13.333 1.66406V4.16406" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M2.91699 7.57812H17.0837" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M17.5 7.08073V14.1641C17.5 16.6641 16.25 18.3307 13.3333 18.3307H6.66667C3.75 18.3307 2.5 16.6641 2.5 14.1641V7.08073C2.5 4.58073 3.75 2.91406 6.66667 2.91406H13.3333C16.25 2.91406 17.5 4.58073 17.5 7.08073Z"
-                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M13.0791 11.4167H13.0866" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M13.0791 13.9167H13.0866" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M9.99607 11.4167H10.0036" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M9.99607 13.9167H10.0036" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M6.91209 11.4167H6.91957" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M6.91209 13.9167H6.91957" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        Monday, March 10,2025
-                      </li>
-                      <span class="border border-[#D0D5DD] p-1 flex items-center gap-1 rounded-lg text-xs text-[#FBBF24]"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1793_22677)">
-<path d="M6.30254 1.76319C6.58784 1.18511 7.41216 1.18511 7.69746 1.76319L8.87628 4.15174C8.98957 4.38129 9.20857 4.5404 9.4619 4.57722L12.0978 4.96024C12.7358 5.05294 12.9905 5.83692 12.5289 6.28689L10.6215 8.14612C10.4382 8.3248 10.3545 8.58225 10.3978 8.83455L10.8481 11.4598C10.9571 12.0952 10.2902 12.5797 9.71957 12.2797L7.36193 11.0403C7.13535 10.9211 6.86465 10.9211 6.63807 11.0403L4.28043 12.2797C3.70983 12.5797 3.04294 12.0952 3.15191 11.4598L3.60218 8.83455C3.64545 8.58225 3.5618 8.3248 3.37849 8.14612L1.47112 6.28689C1.0095 5.83692 1.26423 5.05294 1.90218 4.96024L4.5381 4.57722C4.79143 4.5404 5.01043 4.3813 5.12372 4.15174L6.30254 1.76319Z" fill="#FBBF24"/>
-</g>
-<defs>
-<clipPath id="clip0_1793_22677">
-<rect width="14" height="14" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-4.8
-</span>
+                        <li
+                          class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path d="M6.66699 1.66406V4.16406" stroke="#292D32" stroke-width="1.25"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.333 1.66406V4.16406" stroke="#292D32" stroke-width="1.25"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.91699 7.57812H17.0837" stroke="#292D32" stroke-width="1.25"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M17.5 7.08073V14.1641C17.5 16.6641 16.25 18.3307 13.3333 18.3307H6.66667C3.75 18.3307 2.5 16.6641 2.5 14.1641V7.08073C2.5 4.58073 3.75 2.91406 6.66667 2.91406H13.3333C16.25 2.91406 17.5 4.58073 17.5 7.08073Z"
+                              stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M13.0791 11.4167H13.0866" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.0791 13.9167H13.0866" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.99607 11.4167H10.0036" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.99607 13.9167H10.0036" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.91209 11.4167H6.91957" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.91209 13.9167H6.91957" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                          Monday, March 10,2025
+                        </li>
+                        <span
+                          class="border border-[#D0D5DD] p-1 flex items-center gap-1 rounded-lg text-xs text-[#FBBF24]"><svg
+                            width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1793_22677)">
+                              <path
+                                d="M6.30254 1.76319C6.58784 1.18511 7.41216 1.18511 7.69746 1.76319L8.87628 4.15174C8.98957 4.38129 9.20857 4.5404 9.4619 4.57722L12.0978 4.96024C12.7358 5.05294 12.9905 5.83692 12.5289 6.28689L10.6215 8.14612C10.4382 8.3248 10.3545 8.58225 10.3978 8.83455L10.8481 11.4598C10.9571 12.0952 10.2902 12.5797 9.71957 12.2797L7.36193 11.0403C7.13535 10.9211 6.86465 10.9211 6.63807 11.0403L4.28043 12.2797C3.70983 12.5797 3.04294 12.0952 3.15191 11.4598L3.60218 8.83455C3.64545 8.58225 3.5618 8.3248 3.37849 8.14612L1.47112 6.28689C1.0095 5.83692 1.26423 5.05294 1.90218 4.96024L4.5381 4.57722C4.79143 4.5404 5.01043 4.3813 5.12372 4.15174L6.30254 1.76319Z"
+                                fill="#FBBF24" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1793_22677">
+                                <rect width="14" height="14" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          4.8
+                        </span>
                       </div>
                       <li
                         class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
@@ -501,124 +558,136 @@
                     </ul>
 
                   </div>
-                   <div class="md:hidden flex items-center gap-2">
+                  <div class="md:hidden flex items-center gap-2">
                     <img src="assets/images/checkout-img.png" alt="" class="w-[96px] h-[96px] rounded-lg">
-                  <div class="block">
-                    <h3 class="text-sm leading-5 text-gray-900 font-medium font-sf_pro_display_medium mb-2">
-                      Barcelona: Park Güell Guided Tour & Priority Access
-                    </h3>
-                    <ul class="flex flex-col gap-2 pb-3.5 ">
-                      <li
-                        class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                          <path d="M6.66699 1.66406V4.16406" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M13.333 1.66406V4.16406" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M2.91699 7.57812H17.0837" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M17.5 7.08073V14.1641C17.5 16.6641 16.25 18.3307 13.3333 18.3307H6.66667C3.75 18.3307 2.5 16.6641 2.5 14.1641V7.08073C2.5 4.58073 3.75 2.91406 6.66667 2.91406H13.3333C16.25 2.91406 17.5 4.58073 17.5 7.08073Z"
-                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M13.0791 11.4167H13.0866" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M13.0791 13.9167H13.0866" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M9.99607 11.4167H10.0036" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M9.99607 13.9167H10.0036" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M6.91209 11.4167H6.91957" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M6.91209 13.9167H6.91957" stroke="#292D32" stroke-width="1.66667"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        Monday, March 10,2025
-                      </li>
-                     <div class="flex items-center justify-between">
-                      <li class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                          <path d="M10 6.66406V10.8307" stroke="#292D32" stroke-width="1.25" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path
-                            d="M9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417"
-                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                          <path d="M7.5 1.66406H12.5" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M12.417 15.4155V14.4488C12.417 13.2572 13.267 12.7655 14.3003 13.3655L15.1337 13.8488L15.967 14.3322C17.0003 14.9322 17.0003 15.9072 15.967 16.5072L15.1337 16.9905L14.3003 17.4738C13.267 18.0738 12.417 17.5822 12.417 16.3905V15.4155Z"
-                            stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        </svg>
-                        4:05 PM
-                      </li>
-                      <span class="border border-[#D0D5DD] p-1 flex items-center gap-1 rounded-lg text-xs text-[#FBBF24]"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1793_22677)">
-<path d="M6.30254 1.76319C6.58784 1.18511 7.41216 1.18511 7.69746 1.76319L8.87628 4.15174C8.98957 4.38129 9.20857 4.5404 9.4619 4.57722L12.0978 4.96024C12.7358 5.05294 12.9905 5.83692 12.5289 6.28689L10.6215 8.14612C10.4382 8.3248 10.3545 8.58225 10.3978 8.83455L10.8481 11.4598C10.9571 12.0952 10.2902 12.5797 9.71957 12.2797L7.36193 11.0403C7.13535 10.9211 6.86465 10.9211 6.63807 11.0403L4.28043 12.2797C3.70983 12.5797 3.04294 12.0952 3.15191 11.4598L3.60218 8.83455C3.64545 8.58225 3.5618 8.3248 3.37849 8.14612L1.47112 6.28689C1.0095 5.83692 1.26423 5.05294 1.90218 4.96024L4.5381 4.57722C4.79143 4.5404 5.01043 4.3813 5.12372 4.15174L6.30254 1.76319Z" fill="#FBBF24"></path>
-</g>
-<defs>
-<clipPath id="clip0_1793_22677">
-<rect width="14" height="14" fill="white"></rect>
-</clipPath>
-</defs>
-</svg>
-4.8
-</span>
-                      </div>
-                     
-                    </ul>
-                   
-                  </div>
-                  
-                   </div>
-                   <ul class="md:hidden flex justify-between gap-2 pb-3.5 ">
-                    
-                      <li
-                        class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                          <path
-                            d="M15.0004 5.96407C14.9504 5.95573 14.8921 5.95573 14.8421 5.96407C13.6921 5.9224 12.7754 4.98073 12.7754 3.81406C12.7754 2.6224 13.7337 1.66406 14.9254 1.66406C16.1171 1.66406 17.0754 2.63073 17.0754 3.81406C17.0671 4.98073 16.1504 5.9224 15.0004 5.96407Z"
-                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M14.1422 12.0309C15.2839 12.2225 16.5422 12.0225 17.4255 11.4309C18.6005 10.6475 18.6005 9.3642 17.4255 8.58086C16.5339 7.9892 15.2589 7.78919 14.1172 7.98919"
-                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M4.97539 5.96407C5.02539 5.95573 5.08372 5.95573 5.13372 5.96407C6.28372 5.9224 7.20039 4.98073 7.20039 3.81406C7.20039 2.6224 6.24206 1.66406 5.05039 1.66406C3.85873 1.66406 2.90039 2.63073 2.90039 3.81406C2.90872 4.98073 3.82539 5.9224 4.97539 5.96407Z"
-                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M5.83353 12.0309C4.69186 12.2225 3.43353 12.0225 2.5502 11.4309C1.3752 10.6475 1.3752 9.3642 2.5502 8.58086C3.44186 7.9892 4.71686 7.78919 5.85853 7.98919"
-                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M10.0004 12.1906C9.95039 12.1823 9.89206 12.1823 9.84206 12.1906C8.69206 12.149 7.77539 11.2073 7.77539 10.0406C7.77539 8.84896 8.73372 7.89062 9.92539 7.89062C11.1171 7.89062 12.0754 8.85729 12.0754 10.0406C12.0671 11.2073 11.1504 12.1573 10.0004 12.1906Z"
-                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                          <path
-                            d="M7.57461 14.8187C6.39961 15.6021 6.39961 16.8854 7.57461 17.6687C8.90794 18.5604 11.0913 18.5604 12.4246 17.6687C13.5996 16.8854 13.5996 15.6021 12.4246 14.8187C11.0996 13.9354 8.90794 13.9354 7.57461 14.8187Z"
-                            stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <div class="flex flex-col">
-                          <span class="block mb-1 text-[#667085] text-sm">Total Person</span>
-                          <h6 class="text-base text-secondary-black">05</h6>  
-                          
+                    <div class="block">
+                      <h3 class="text-base leading-5 text-gray-900 font-medium font-sf_pro_display_medium mb-2">
+                        Barcelona: Park Güell Guided Tour & Priority Access
+                      </h3>
+                      <ul class="flex flex-col gap-2 pb-3.5 ">
+                        <li
+                          class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none">
+                            <path d="M6.66699 1.66406V4.16406" stroke="#292D32" stroke-width="1.25"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.333 1.66406V4.16406" stroke="#292D32" stroke-width="1.25"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2.91699 7.57812H17.0837" stroke="#292D32" stroke-width="1.25"
+                              stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M17.5 7.08073V14.1641C17.5 16.6641 16.25 18.3307 13.3333 18.3307H6.66667C3.75 18.3307 2.5 16.6641 2.5 14.1641V7.08073C2.5 4.58073 3.75 2.91406 6.66667 2.91406H13.3333C16.25 2.91406 17.5 4.58073 17.5 7.08073Z"
+                              stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path d="M13.0791 11.4167H13.0866" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.0791 13.9167H13.0866" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.99607 11.4167H10.0036" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.99607 13.9167H10.0036" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.91209 11.4167H6.91957" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.91209 13.9167H6.91957" stroke="#292D32" stroke-width="1.66667"
+                              stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                          Monday, March 10,2025
+                        </li>
+                        <div class="flex items-center justify-between">
+                          <li
+                            class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                              fill="none">
+                              <path d="M10 6.66406V10.8307" stroke="#292D32" stroke-width="1.25" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path
+                                d="M9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417"
+                                stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M7.5 1.66406H12.5" stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                d="M12.417 15.4155V14.4488C12.417 13.2572 13.267 12.7655 14.3003 13.3655L15.1337 13.8488L15.967 14.3322C17.0003 14.9322 17.0003 15.9072 15.967 16.5072L15.1337 16.9905L14.3003 17.4738C13.267 18.0738 12.417 17.5822 12.417 16.3905V15.4155Z"
+                                stroke="#292D32" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            </svg>
+                            4:05 PM
+                          </li>
+                          <span
+                            class="border border-[#D0D5DD] p-1 flex items-center gap-1 rounded-lg text-xs text-[#FBBF24]"><svg
+                              width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1793_22677)">
+                                <path
+                                  d="M6.30254 1.76319C6.58784 1.18511 7.41216 1.18511 7.69746 1.76319L8.87628 4.15174C8.98957 4.38129 9.20857 4.5404 9.4619 4.57722L12.0978 4.96024C12.7358 5.05294 12.9905 5.83692 12.5289 6.28689L10.6215 8.14612C10.4382 8.3248 10.3545 8.58225 10.3978 8.83455L10.8481 11.4598C10.9571 12.0952 10.2902 12.5797 9.71957 12.2797L7.36193 11.0403C7.13535 10.9211 6.86465 10.9211 6.63807 11.0403L4.28043 12.2797C3.70983 12.5797 3.04294 12.0952 3.15191 11.4598L3.60218 8.83455C3.64545 8.58225 3.5618 8.3248 3.37849 8.14612L1.47112 6.28689C1.0095 5.83692 1.26423 5.05294 1.90218 4.96024L4.5381 4.57722C4.79143 4.5404 5.01043 4.3813 5.12372 4.15174L6.30254 1.76319Z"
+                                  fill="#FBBF24"></path>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1793_22677">
+                                  <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            4.8
+                          </span>
                         </div>
-                      </li>
-                       <li
-                        class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.9897 8.95996H7.00977" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 7.28003V8.96002" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14.5 8.93994C14.5 13.2399 11.14 16.7199 7 16.7199" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16.9992 16.72C15.1992 16.72 13.5992 15.76 12.4492 14.25" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
 
-                        <div class="flex flex-col">
-                          <span class="block mb-1 text-[#667085] text-sm">Tour Language</span>
-                          <h6 class="text-base text-secondary-black">English</h6>  
-                          
-                        </div>
-                      </li>
-                    </ul>
+                      </ul>
+
+                    </div>
+
+                  </div>
+                  <ul class="md:hidden flex justify-between gap-2 pb-3.5 ">
+
+                    <li
+                      class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                          d="M15.0004 5.96407C14.9504 5.95573 14.8921 5.95573 14.8421 5.96407C13.6921 5.9224 12.7754 4.98073 12.7754 3.81406C12.7754 2.6224 13.7337 1.66406 14.9254 1.66406C16.1171 1.66406 17.0754 2.63073 17.0754 3.81406C17.0671 4.98073 16.1504 5.9224 15.0004 5.96407Z"
+                          stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M14.1422 12.0309C15.2839 12.2225 16.5422 12.0225 17.4255 11.4309C18.6005 10.6475 18.6005 9.3642 17.4255 8.58086C16.5339 7.9892 15.2589 7.78919 14.1172 7.98919"
+                          stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4.97539 5.96407C5.02539 5.95573 5.08372 5.95573 5.13372 5.96407C6.28372 5.9224 7.20039 4.98073 7.20039 3.81406C7.20039 2.6224 6.24206 1.66406 5.05039 1.66406C3.85873 1.66406 2.90039 2.63073 2.90039 3.81406C2.90872 4.98073 3.82539 5.9224 4.97539 5.96407Z"
+                          stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M5.83353 12.0309C4.69186 12.2225 3.43353 12.0225 2.5502 11.4309C1.3752 10.6475 1.3752 9.3642 2.5502 8.58086C3.44186 7.9892 4.71686 7.78919 5.85853 7.98919"
+                          stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M10.0004 12.1906C9.95039 12.1823 9.89206 12.1823 9.84206 12.1906C8.69206 12.149 7.77539 11.2073 7.77539 10.0406C7.77539 8.84896 8.73372 7.89062 9.92539 7.89062C11.1171 7.89062 12.0754 8.85729 12.0754 10.0406C12.0671 11.2073 11.1504 12.1573 10.0004 12.1906Z"
+                          stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M7.57461 14.8187C6.39961 15.6021 6.39961 16.8854 7.57461 17.6687C8.90794 18.5604 11.0913 18.5604 12.4246 17.6687C13.5996 16.8854 13.5996 15.6021 12.4246 14.8187C11.0996 13.9354 8.90794 13.9354 7.57461 14.8187Z"
+                          stroke="#292D32" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <div class="flex flex-col">
+                        <span class="block mb-1 text-[#667085] text-sm">Total Person</span>
+                        <h6 class="text-base text-secondary-black">05</h6>
+
+                      </div>
+                    </li>
+                    <li
+                      class="flex items-center gap-2 text-base leading-[14px] font-medium font-sf_pro_display_medium text-[#667085]">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9897 8.95996H7.00977" stroke="#667085" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M12 7.28003V8.96002" stroke="#667085" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M14.5 8.93994C14.5 13.2399 11.14 16.7199 7 16.7199" stroke="#667085" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.9992 16.72C15.1992 16.72 13.5992 15.76 12.4492 14.25" stroke="#667085"
+                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                          stroke="#667085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="flex flex-col">
+                        <span class="block mb-1 text-[#667085] text-sm">Tour Language</span>
+                        <h6 class="text-base text-secondary-black">English</h6>
+
+                      </div>
+                    </li>
+                  </ul>
                   <!-- coupons btn  -->
                   <button id="openSidebar"
                     class="flex items-center justify-between p-3 rounded-2xl border border-[#D0D5DD] bg-white transition-all duration-500 ">
@@ -675,12 +744,12 @@
 
     </main>
 
-    <!-- footer  -->
-    <footer class="py-[40px] lg:py-[80px] bg-[#010202] relative">
+     <!-- footer  -->
+    <footer class="py-[40px] lg:py-[60px] bg-[#010202] relative">
       <div class="w-full max-w-7xl mx-auto px-4 lg:px-8 ">
         <div class="grid grid-cols-12 w-full gap-8 pb-8 border-b border-[#404145]">
           <div class="col-span-12 lg:col-span-4 flex flex-col ">
-            <a href="#" class="md:mb-12">
+            <a href="#" class="footer-logo">
               <img src="assets/images/ft-logo.png" alt="">
             </a>
             <div class="mb-8 mt-12 hidden md:block">
@@ -903,39 +972,39 @@
             </div>
           </div>
           <div
-            class="col-span-12 lg:col-span-8 grid grid-cols-2 md:flex items-start gap-8 md:gap-20 justify-center lg:justify-end">
+            class="col-span-12 lg:col-span-8 grid grid-cols-2 md:flex items-start gap-8 xl:gap-20 xl:justify-end">
             <div class="hidden md:flex flex-col gap-6">
               <p class="font-sf_pro_display text-lg leading-[150%] text-white">Get in Touch</p>
               <ul class="flex flex-col gap-3">
-                <li><a href="#" class="text-lg leading-[150%] underline text-white">vacayout@gmail.com</a></li>
-                <li><a href="#" class="text-lg leading-[150%] underline text-white">+31 222 433 112</a></li>
+                <li><a href="#" class="text-base leading-[150%] underline text-white">vacayout@gmail.com</a></li>
+                <li><a href="#" class="text-base leading-[150%] underline text-white">+31 222 433 112</a></li>
               </ul>
             </div>
             <div class="flex flex-col gap-6 ">
               <p class="font-sf_pro_display text-lg leading-[150%] text-white">Cities</p>
               <ul class="flex flex-col gap-3">
-                <li><a href="#" class="text-lg leading-[150%] text-white">New York</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Las Vegas</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Rome</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Paris</a></li>
-                <li><a href="#" class="text-lg leading-[150%] underline text-white">+100 More</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">New York</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Las Vegas</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Rome</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Paris</a></li>
+                <li><a href="#" class="text-base leading-[150%] underline text-white">+100 More</a></li>
               </ul>
             </div>
             <div class="flex flex-col gap-6 ">
               <p class="font-sf_pro_display text-lg leading-[150%] text-white">Vacayout</p>
               <ul class="flex flex-col gap-3">
-                <li><a href="#" class="text-lg leading-[150%] text-white">Our Story</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Careers</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Newsroom</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Blogs</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Contact</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Our Story</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Careers</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Newsroom</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Blogs</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Contact</a></li>
               </ul>
             </div>
             <div class="flex flex-col gap-6 col-span-2">
               <p class="font-sf_pro_display text-lg leading-[150%] text-white">Links</p>
               <ul class="flex flex-col gap-3">
-                <li><a href="#" class="text-lg leading-[150%] text-white">Terms & Conditons</a></li>
-                <li><a href="#" class="text-lg leading-[150%] text-white">Privacy Policy</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Terms & Conditons</a></li>
+                <li><a href="#" class="text-base leading-[150%] text-[#D0D5DD]">Privacy Policy</a></li>
               </ul>
             </div>
             <div class="md:hidden col-span-2">
@@ -1106,17 +1175,20 @@
       </div>
     </footer>
   </div>
-  
+
 
   <!-- coupon code sidebar  -->
   <div id="sidebar"
     class="fixed top-0 right-0 h-screen w-full z-[1000] max-w-[600px] p-6 rounded-l-2xl flex flex-col gap-4 bg-white text-white transform translate-x-full transition-transform duration-300 ">
     <div class="flex justify-between items-center ">
-      <h2 class="text-xl leading-6 text-gray-900 font-semibold">Coupon Code</h2>
-       <button id="closeSidebar" class="text-black text-2xl leading-none border border-[#ECECEC] w-[36px] h-[36px] rounded-lg flex justify-center items-center">
+      <h2 class="text-xl leading-6 text-gray-900 font-sf_pro_display_semibold">Coupon Code</h2>
+      <button id="closeSidebar"
+        class="text-black text-2xl leading-none border border-[#ECECEC] w-[36px] h-[36px] rounded-lg flex justify-center items-center">
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2.10901 1.01568L5.997 4.90368L9.869 1.03168C9.93686 0.959457 10.0186 0.901678 10.1093 0.861812C10.2001 0.821946 10.2979 0.800814 10.397 0.799683C10.6092 0.799683 10.8127 0.883968 10.9627 1.034C11.1127 1.18403 11.197 1.38751 11.197 1.59968C11.1989 1.69776 11.1807 1.79519 11.1435 1.88599C11.1064 1.97678 11.0511 2.05903 10.981 2.12768L7.069 5.99968L10.981 9.91168C11.1129 10.0407 11.1902 10.2154 11.197 10.3997C11.197 10.6119 11.1127 10.8153 10.9627 10.9654C10.8127 11.1154 10.6092 11.1997 10.397 11.1997C10.295 11.2039 10.1933 11.1869 10.0983 11.1497C10.0033 11.1125 9.91701 11.056 9.84501 10.9837L5.997 7.09568L2.11701 10.9757C2.04941 11.0455 1.96866 11.1012 1.87941 11.1397C1.79016 11.1781 1.69418 11.1985 1.59701 11.1997C1.38483 11.1997 1.18135 11.1154 1.03132 10.9654C0.881291 10.8153 0.797005 10.6119 0.797005 10.3997C0.79514 10.3016 0.813338 10.2042 0.850481 10.1134C0.887625 10.0226 0.942931 9.94033 1.01301 9.87168L4.925 5.99968L1.01301 2.08768C0.881153 1.95869 0.803837 1.78401 0.797005 1.59968C0.797005 1.38751 0.881291 1.18403 1.03132 1.034C1.18135 0.883968 1.38483 0.799683 1.59701 0.799683C1.78901 0.802083 1.97301 0.879683 2.10901 1.01568Z" fill="black"/>
-</svg>
+          <path
+            d="M2.10901 1.01568L5.997 4.90368L9.869 1.03168C9.93686 0.959457 10.0186 0.901678 10.1093 0.861812C10.2001 0.821946 10.2979 0.800814 10.397 0.799683C10.6092 0.799683 10.8127 0.883968 10.9627 1.034C11.1127 1.18403 11.197 1.38751 11.197 1.59968C11.1989 1.69776 11.1807 1.79519 11.1435 1.88599C11.1064 1.97678 11.0511 2.05903 10.981 2.12768L7.069 5.99968L10.981 9.91168C11.1129 10.0407 11.1902 10.2154 11.197 10.3997C11.197 10.6119 11.1127 10.8153 10.9627 10.9654C10.8127 11.1154 10.6092 11.1997 10.397 11.1997C10.295 11.2039 10.1933 11.1869 10.0983 11.1497C10.0033 11.1125 9.91701 11.056 9.84501 10.9837L5.997 7.09568L2.11701 10.9757C2.04941 11.0455 1.96866 11.1012 1.87941 11.1397C1.79016 11.1781 1.69418 11.1985 1.59701 11.1997C1.38483 11.1997 1.18135 11.1154 1.03132 10.9654C0.881291 10.8153 0.797005 10.6119 0.797005 10.3997C0.79514 10.3016 0.813338 10.2042 0.850481 10.1134C0.887625 10.0226 0.942931 9.94033 1.01301 9.87168L4.925 5.99968L1.01301 2.08768C0.881153 1.95869 0.803837 1.78401 0.797005 1.59968C0.797005 1.38751 0.881291 1.18403 1.03132 1.034C1.18135 0.883968 1.38483 0.799683 1.59701 0.799683C1.78901 0.802083 1.97301 0.879683 2.10901 1.01568Z"
+            fill="black" />
+        </svg>
 
       </button>
     </div>
@@ -1130,7 +1202,7 @@
 
     <div class="w-full h-full md:h-[calc(100%-200px)] overflow-y-auto scrollbar-hide">
       <h3 class="text-xl leading-6 text-gray-900 font-medium font-sf_pro_display_medium ">Payment Coupons</h3>
-      <div class="flex flex-col gap-5 radio-coupon">
+      <div class="flex flex-col gap-0 md:gap-5 radio-coupon">
         <div class="block border-b border-dashed border-[#D0D5DD] ">
           <input type="radio" name="radio-right"
             class="hidden checked:bg-no-repeat checked:bg-center checked:border-indigo-500 checked:bg-indigo-100"
@@ -1151,11 +1223,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   Get <div class="text-orange px-1">10% off</div> on your first booking.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   SAVE10</p>
               </div>
             </div>
@@ -1182,11 +1255,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   Enjoy <div class="text-orange px-1">15% off</div> on weekend getaways.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   WEEKEND15</p>
               </div>
             </div>
@@ -1213,11 +1287,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   Grab <div class="text-orange px-1">20% off</div> on summer tours.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   SUMMER20</p>
               </div>
             </div>
@@ -1243,11 +1318,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   Flat <div class="text-orange px-1">€50 off</div> on bookings above €50.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   TRAVEL5</p>
               </div>
             </div>
@@ -1273,11 +1349,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   <div class="text-orange px-1">30% off</div> on adventure & thrill packages.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   ADVENTURE30</p>
               </div>
             </div>
@@ -1303,11 +1380,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   Get <div class="text-orange px-1">10% off</div> on your first booking.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   SAVE10</p>
               </div>
             </div>
@@ -1334,11 +1412,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   Enjoy <div class="text-orange px-1">15% off</div> on weekend getaways.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   WEEKEND15</p>
               </div>
             </div>
@@ -1365,11 +1444,12 @@
                   stroke-linejoin="round" />
               </svg>
               <div class="block">
-                <h5 class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
+                <h5
+                  class="text-sm md:text-lg leading-[21px] text-gray-900 font-medium font-sf_pro_display_medium mb-2 flex items-center">
                   Grab <div class="text-orange px-1">20% off</div> on summer tours.
                 </h5>
                 <p
-                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-semibold text-[#026AA2]">
+                  class="py-0.5 px-2 rounded-lg border-[0.5px] border-[#D0D5DD] w-max text-sm leading-[26px] font-sf_pro_display_semibold text-[#026AA2]">
                   SUMMER20</p>
               </div>
             </div>
@@ -1380,14 +1460,14 @@
       </div>
     </div>
   </div>
-    <!-- js links  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
-    <script src="assets/js/main.js"></script>
-   
+  <!-- js links  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+  <script src="assets/js/main.js"></script>
 
-    
+
+
 </body>
 
 </html>

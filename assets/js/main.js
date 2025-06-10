@@ -5,7 +5,51 @@ $(document).ready(function () {
 		$("#toggle-menu").toggleClass('-translate-y-[200%] ');
 	});
 });
+/*============card mobile slider==================*/
+// Select all slider containers
+        document.querySelectorAll(".card-inner-slider").forEach((sliderEl, index) => {
+            // Find the pagination inside this slider
+            const paginationEl = sliderEl.querySelector(".swiper-pagination");
 
+            // Create a new Swiper instance for each
+            const swiper = new Swiper(sliderEl, {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                centeredSlides: true,
+                draggable: true,
+                pagination: {
+                    el: paginationEl,
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    767: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    1124: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                },
+            });
+
+            // Start/stop autoplay on hover
+            swiper.autoplay.stop();
+
+            sliderEl.addEventListener("mouseenter", () => {
+                swiper.autoplay.start();
+            });
+
+            sliderEl.addEventListener("mouseleave", () => {
+                swiper.autoplay.stop();
+            });
+        });
+  
 /*=============date picker mobile===============*/
   flatpickr(".datemobile", {
   dateFormat: "Y-m-d",
@@ -357,28 +401,7 @@ function decreaseValue(button) {
         },
       },
     });
-/*============card mobile slider==================*/
-  var swiper = new Swiper(".card-inner-slider", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      loop: true,
-      draggable: true,
-      centeredSlides: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      breakpoints: {
-        767: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
 
-        1124: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-      },
-    });
 /*==========more exp mobile slider==========*/        
  var swiper = new Swiper(".mob-more-exp", {
       slidesPerView: "auto",
@@ -460,34 +483,30 @@ function decreaseValue(button) {
 /*===================dropdown===================*/
 $(document).ready(function () {
   $('.dropdown-toggle').on('click', function (e) {
-    e.stopPropagation(); // prevent event from bubbling up
+    e.stopPropagation();
     const $menu = $(this).siblings('.dropdown-menu');
     const $menuprofile = $(this).siblings('.profile-dropdown-menu');
     const $closebtn = $(this).siblings('.close-profile-menu');
 
-    // Toggle this menu
     $menu.toggle();
     $menuprofile.toggleClass('active');
-
-    // Optionally hide other open dropdowns
-    // $('.dropdown-menu').not($menu).hide();
   });
 
-  // Prevent clicks inside the dropdown menu from closing it
   $('.dropdown-menu').on('click', function (e) {
     e.stopPropagation();
   });
-  // close menu on close button click
- $('.close-profile-menu').on('click', function (e) {
-  $(this).closest('.profile-dropdown-menu').removeClass('active');
-});
-  // Click outside to close all dropdowns
+
+  $('.close-profile-menu').on('click', function (e) {
+    $(this).closest('.profile-dropdown-menu').removeClass('active');
+  });
+
   $(document).on('click', function () {
-     $menuprofile.removeClass('active');
-      
+    // Re-select all profile dropdowns and deactivate
+    $('.profile-dropdown-menu').removeClass('active');
     $('.dropdown-menu').hide();
   });
 });
+
 
 /*=====================sidebar==================*/
  $(document).ready(function() {

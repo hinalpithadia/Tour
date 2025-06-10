@@ -113,7 +113,7 @@
         width: 100%;
 
         background: transparent;
-        padding-right: 50px;
+        padding-right: 20px;
         font-size: 16px;
         color: #FF5231;
         font-weight: 500;
@@ -841,6 +841,14 @@
     .Traveler-big-slider .swiper-button-next:after {
         content: "";
     }
+    
+   .radio-outline-orange input[type="radio"]:checked + label span {
+    @apply border-[3px] border-white bg-orange outline outline-1 outline-offset-1 outline-orange shadow-[inset_0_0px_0px_2.5px_rgba(16,24,40,0.05)] cursor-pointer;
+    }
+
+    .btn-blue{
+        @apply py-2.5 px-4 bg-[rgba(2,106,162,0.10)] rounded-lg text-lg text-[#026AA2] font-sf_pro_display_medium hover:bg-[rgba(2,106,162,0.20)] transition-all duration-500;
+    }
     @media(max-width:1024px) {
          .custom-flatpickr-wrapper{
             margin-left: -80%;
@@ -850,8 +858,14 @@
          .custom-flatpickr-wrapper{
             margin-left: 0%;
          }  
+         .swiper.tour-hero-mobile,.swiper.tour-expert-mobile{
+            overflow: hidden!important;
+         }
     }
     @media(max-width:767px){
+        .footer-logo img{
+           max-width: 250px;     
+        }
         .results{
             display: none;
         }
